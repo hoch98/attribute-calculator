@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <title>Attribute Upgrading Calculator
+    </title>
+</head>
+<body>
+    <h1>
+        Attribute Upgrading Calculator
+    </h1>
+    <br>
+    <div id="inputSelectors">
+        <div id="attributeSelectorContainer">
+            <p>Attribute to Upgrade</p>
+            <select name="attributeSelector" id="attributeSelector">
+                <option value="arachno">Arachno</option>
+                <option value="arachno_resistance">Arachno Resistance</option>
+                <option value="attack_speed">Attack Speed</option>
+                <option value="blazing">Blazing</option>
+                <option value="blazing_fortune">Blazing Fortune</option>
+                <option value="blazing_resistance">Blazing Resistance</option>
+                <option value="breeze">Breeze</option>
+                <option value="combo">Combo</option>
+                <option value="deadeye">Deadeye</option>
+                <option value="dominance">Dominance</option>
+                <option value="double_hook">Double Hook</option>
+                <option value="elite">Elite</option>
+                <option value="ender">Ender</option>
+                <option value="ender_resistance">Ender Resistance</option>
+                <option value="experience">Experience</option>
+                <option value="fisherman">Fisherman</option>
+                <option value="fishing_experience">Fishing Experience</option>
+                <option value="fishing_speed">Fishing Speed</option>
+                <option value="fortitude">Fortitude</option>
+                <option value="hunter">Hunter</option>
+                <option value="ignition">Ignition</option>
+                <option value="infection">Infection</option>
+                <option value="life_recovery">Life Recovery</option>
+                <option value="life_regeneration">Life Regeneration</option>
+                <option value="lifeline">Lifeline</option>
+                <option value="magic_find">Magic Find</option>
+                <option value="mana_pool">Mana Pool</option>
+                <option value="mana_regeneration">Mana Regeneration</option>
+                <option value="mana_steal">Mana Steal</option>
+                <option value="midas_touch">Midas Touch</option>
+                <option value="speed">Speed</option>
+                <option value="trophy_hunter">Trophy Hunter</option>
+                <option value="undead">Undead</option>
+                <option value="undead_resistance">Undead Resistance</option>
+                <option value="veteran">Veteran</option>
+                <option value="mending">Vitality</option>
+                <option value="warrior">Warrior</option>
+            </select>
+        </div>
+        <div id="startingLevelInputContainer">
+            <p id="startingLevelDisplay">Starting Level: 1</p>
+            <input type="range" name="startingLevel" id="startingLevel" min="1" max="9" step="1" value="1" oninput="document.querySelector('#startingLevelDisplay').textContent = 'Starting Level: '+this.value">
+        </div>
+        <div id="endingLevelInputContainer">
+            <p id="endingLevelDisplay">Ending Level: 1</p>
+            <input type="range" name="endingLevel" id="endingLevel" min="1" max="10" step="1" value="1">
+        </div>
+    </div>
+    <div id="calculateContainer">
+        <button id="calculateButton">Calculate</button>
+    </div>
+    <div id="resultsContainer">
+
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

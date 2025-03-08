@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Montserrat;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputSelectors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body div {
+    text-align: center;
+    display: inline-block;
+    margin-inline: 5%;
+}
+
+#calculateContainer {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#calculateButton {
+    font-size: large;
+}
+
+#resultsContainer {
+    width:50%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.costSum {
+    margin: 0;
+    display: inline-block;
+}
+
+h3 button{
+    margin: 0;
+    margin-left: 1%;
+    font-size: large;
+    display: inline;
+}
