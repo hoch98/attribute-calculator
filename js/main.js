@@ -33,7 +33,8 @@ async function calculatePrices() {
             }
         }
     })
-    prices[startLevel].sort((a, b) => {return a.startingBid > b.startingBid})
+    prices[startLevel].sort((a, b) => a.startingBid - b.startingBid);
+    console.log(prices[startLevel])
 }
 
 function cost(l, stack=[]) {
@@ -58,7 +59,7 @@ function cost(l, stack=[]) {
         compareStack.forEach((i) => {
             let tier = i["nbtData"]["data"]["attributes"][attribute]
             prices[tier].push(i)
-            prices[tier].sort((a, b) => {return a.startingBid > b.startingBid})
+            prices[tier].sort((a, b) => a.startingBid - b.startingBid);
         })
         return rl
     } if (noCurrent && !ranOut) {
@@ -70,7 +71,7 @@ function cost(l, stack=[]) {
         compareStack.forEach((i) => {
             let tier = i["nbtData"]["data"]["attributes"][attribute]
             prices[tier].push(i)
-            prices[tier].sort((a, b) => {return a.startingBid > b.startingBid})
+            prices[tier].sort((a, b) => a.startingBid - b.startingBid);
         })
         return rl
     }
@@ -103,8 +104,8 @@ document.querySelector("#calculateButton").onclick = async () => {
     running = true
     prices=  [[]];
     await calculatePrices();
-    let result = cost(endLevel);
-    result.sort((a, b) => {return a.startingBid > b.startingBid})
+    let result = await cost(endLevel);
+    result.sort((a, b) => a.startingBid - b.startingBid);
     if (result.length == 0) {
         document.querySelector("#resultsContainer").innerHTML = "Could not find a way to reach desired level!"
     } else {

@@ -1,8 +1,8 @@
 import requests
 
-startLevel = 1
-endLevel = 3
-attribute = "mending"
+startLevel = 3
+endLevel = 5
+attribute = "dominance"
 
 prices = [[]]
 
