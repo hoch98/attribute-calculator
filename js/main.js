@@ -142,3 +142,25 @@ document.querySelector("#calculateButton").onclick = async () => {
     }
     running = false
 }
+
+let theme = "dark"
+
+document.querySelector(".themeChanger").onclick = () => {
+    if (theme == "dark") {
+        console.log("hi")
+        document.body.classList.remove("dark")
+        document.querySelector("#inputSelectors").classList.remove("dark")
+        document.querySelector("#attributeSelector").classList.remove("dark")
+        document.querySelector("#calculateButton").classList.remove("dark")
+        document.querySelector(".themeChanger").classList.remove("dark")
+        theme = "light"
+    }
+    else  {
+        document.body.classList.add("dark")
+        document.querySelector("#inputSelectors").classList.add("dark")
+        document.querySelector("#attributeSelector").classList.add("dark")
+        document.querySelector("#calculateButton").classList.add("dark")
+        document.querySelector(".themeChanger").classList.add("dark")
+        theme = "dark"
+    }
+}

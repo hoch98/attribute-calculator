@@ -8,16 +8,32 @@
     <title>Attribute Upgrading Calculator
     </title>
 </head>
-<body>
+<body class="dark">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="themeChanger dark"
+        >
+        <path d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
+        <path d="M3 21l18 0" />
+        <path d="M12 3v6l3 -3m-6 0l3 3" />
+    </svg>
     <h1>
         Attribute Upgrading Calculator
     </h1>
     <p style="text-align: center;">data from https://sky.coflnet.com/api</p>
     <br>
-    <div id="inputSelectors">
+    <div id="inputSelectors" class="dark">
         <div id="attributeSelectorContainer">
             <p>Attribute to Upgrade</p>
-            <select name="attributeSelector" id="attributeSelector">
+            <select name="attributeSelector" id="attributeSelector" class="dark">
                 <option value="arachno">Arachno</option>
                 <option value="arachno_resistance">Arachno Resistance</option>
                 <option value="attack_speed">Attack Speed</option>
@@ -67,7 +83,7 @@
         </div>
     </div>
     <div id="calculateContainer">
-        <button id="calculateButton">Calculate</button>
+        <button id="calculateButton" class="dark">Calculate</button>
     </div>
     <div id="resultsContainer">
 
