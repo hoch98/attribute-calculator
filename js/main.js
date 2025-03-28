@@ -37,7 +37,7 @@ async function calculatePrices() {
                 try {
                     data = await response.json()
                 } catch (e) {
-                    alert(progress+"/"+finishedProgress+" coflnet api request limit reached, continuing after 45 seconds")
+                    document.querySelector("#resultsContainer").innerHTML = progress+"/"+finishedProgress+": coflnet api request limit reached, continuing after 45 seconds"
                     await sleep(45000);
                     response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
                     data = await response.json()
