@@ -81,6 +81,16 @@
             <p id="endingLevelDisplay">Ending Level: 1</p>
             <input type="range" name="endingLevel" id="endingLevel" min="1" max="10" step="1" value="1">
         </div>
+        <br>
+        <div id="armourInputContainer">
+            <p>Use armour: <input type="checkbox" name="Use armour: " id="useArmour"></p>
+            <select name="armourType" id="armourType" class="dark" style="visibility: hidden;">
+                <option value="helmet">Helmet</option>
+                <option value="chestplate">Chestplate</option>
+                <option value="leggings">Leggings</option>
+                <option value="boots">Boots</option>
+            </select>
+        </div>
     </div>
     <div id="calculateContainer">
         <button id="calculateButton" class="dark">Calculate</button>

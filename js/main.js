@@ -3,6 +3,11 @@ var endLevel = parseInt(document.querySelector("#endingLevel").value)
 var attribute = document.querySelector("#attributeSelector").value
 var running = false
 var prices = [[]]
+let piece = "boots"
+let types = ["aurora", "crimson", "fervor", "hollow", "terror"]
+let useArmour = false
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 function formatNumber(num) {
     if (num >= 1_000_000_000) {
@@ -18,26 +23,53 @@ function formatNumber(num) {
 
 async function calculatePrices() {
     prices = [[]]
-    for (var i = 0; i < 10; i++) {
-        let result = await (await fetch("https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?"+attribute+"="+(i+1))).text();
-        prices.push(JSON.parse(result))
-    }
-    prices[startLevel].push({
-        "startingBid": 0, 
-        "uuid": "starting",
-        "nbtData" : {
-            "data": {
-                "attributes": {
-                    [attribute]: startLevel
+    for (var i = 0; i < endLevel; i++) {
+        let level_prices = []
+        
+        if (useArmour) {
+            for (let j = 0; j < 5; j++) {
+                let armour_tag = (types[j]+"_"+piece).toUpperCase()
+                console.log(armour_tag)
+                let response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
+                console.log("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1))
+                let data;
+                try {
+                    data = await response.json()
+                } catch (e) {
+                    alert("request limit exceeded, continuing after 45 seconds")
+                    await sleep(45000);
+                    response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
+                    data = await response.json()
                 }
+    
+                level_prices = level_prices.concat(data.map(product => ({
+                    "attributes": { [attribute]: i+1 },
+                    "startingBid": product.startingBid,
+                    "uuid": product.uuid,
+                    "type": armour_tag
+                })));
             }
         }
-    })
+
+        let data = await (await fetch("https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?"+attribute+"="+(i+1))).json();
+        level_prices = level_prices.concat(data.map(product => ({
+            "attributes": { [attribute]: i+1 },
+            "startingBid": product.startingBid,
+            "uuid": product.uuid,
+            "type": "ATTRIBUTE_SHARD"
+        })));
+        prices.push(level_prices)
+    }
+    prices[startLevel].push({
+        "attributes": { [attribute]: startLevel },
+        "startingBid": 0, 
+        "uuid": "starting",
+        "type": "starting_piece"
+    });
     prices[startLevel].sort((a, b) => a.startingBid - b.startingBid);
-    console.log(prices[startLevel])
 }
 
-function cost(l, stack=[]) {
+function cost(l, prices, attribute,  stack=[]) {
     let rl = stack.slice()
     let shard;
     if (l == 1) {
@@ -46,8 +78,8 @@ function cost(l, stack=[]) {
         rl.push(shard)
         return rl
     }
-    let t1 = cost(l-1, rl)
-    let t2 = cost(l-1, rl)
+    let t1 = cost(l-1, prices, attribute, rl)
+    let t2 = cost(l-1, prices, attribute, rl)
     let compareStack = t1.concat(t2);
     let ranOut = t1.length == 0 || t2.length == 0
     let noCurrent = prices[l].length == 0
@@ -57,7 +89,7 @@ function cost(l, stack=[]) {
     if (ranOut && !noCurrent) { 
         rl.push(prices[l].shift())
         compareStack.forEach((i) => {
-            let tier = i["nbtData"]["data"]["attributes"][attribute]
+            let tier = i["attributes"][attribute]
             prices[tier].push(i)
             prices[tier].sort((a, b) => a.startingBid - b.startingBid);
         })
@@ -69,7 +101,7 @@ function cost(l, stack=[]) {
     } if (prices[l][0]["startingBid"] <= sum) {
         rl.push(prices[l].shift())
         compareStack.forEach((i) => {
-            let tier = i["nbtData"]["data"]["attributes"][attribute]
+            let tier = i["attributes"][attribute]
             prices[tier].push(i)
             prices[tier].sort((a, b) => a.startingBid - b.startingBid);
         })
@@ -85,6 +117,20 @@ function copyAuctionId(string) {
 
 document.querySelector("#attributeSelector").addEventListener("change", (input) => {
     attribute = input.target.value
+})
+
+document.querySelector("#armourType").addEventListener("change", (input) => {
+    piece = input.target.value
+    console.log(piece)
+})
+
+document.querySelector("#useArmour").addEventListener("change", (input) => {
+    useArmour = !useArmour
+    if (useArmour) {
+        document.querySelector("#armourType").style.visibility = "visible";
+    } else {
+        document.querySelector("#armourType").style.visibility = "hidden";
+    }
 })
 
 document.querySelector("#startingLevel").addEventListener("input", (input) => {
@@ -104,7 +150,7 @@ document.querySelector("#calculateButton").onclick = async () => {
     running = true
     prices=  [[]];
     await calculatePrices();
-    let result = await cost(endLevel);
+    let result = await cost(endLevel, prices, attribute);
     result.sort((a, b) => a.startingBid - b.startingBid);
     if (result.length == 0) {
         document.querySelector("#resultsContainer").innerHTML = "Could not find a way to reach desired level!"
@@ -116,13 +162,13 @@ document.querySelector("#calculateButton").onclick = async () => {
         document.querySelector("#resultsContainer").appendChild(sumElement)
         result.forEach((book) => {
             let bookElement = document.createElement("h3")
-            let tier = book["nbtData"]["data"]["attributes"][attribute]
+            let tier = book["attributes"][attribute]
             bookElement.setAttribute("copyString", "/viewauction "+book.uuid)
             if (book.startingBid == 0) return;
             if (attribute == "mending") {
-                bookElement.textContent = "VITALITY "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
+                bookElement.textContent = book["type"]+" /W VITALITY "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
             }else {
-                bookElement.textContent = attribute.toUpperCase()+" "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
+                bookElement.textContent = book["type"]+" /W "+attribute.toUpperCase()+" "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
             }
             let copybutton = document.createElement("button");
             let copyicon = document.createElement('i');
@@ -153,6 +199,7 @@ document.querySelector(".themeChanger").onclick = () => {
         document.querySelector("#attributeSelector").classList.remove("dark")
         document.querySelector("#calculateButton").classList.remove("dark")
         document.querySelector(".themeChanger").classList.remove("dark")
+        document.querySelector("#armourType").classList.remove("dark")
         theme = "light"
     }
     else  {
@@ -161,6 +208,7 @@ document.querySelector(".themeChanger").onclick = () => {
         document.querySelector("#attributeSelector").classList.add("dark")
         document.querySelector("#calculateButton").classList.add("dark")
         document.querySelector(".themeChanger").classList.add("dark")
+        document.querySelector("#armourType").classList.add("dark")
         theme = "dark"
     }
 }

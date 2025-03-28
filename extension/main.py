@@ -1,12 +1,22 @@
-import requests, json
+import requests, json, time
 
 starting_armour = {
   "tier": "burning",
-  "type": "aurora",
-  "piece": "boots",
-  "attr1": ["mending", 2, 6],
+  "type": "crimson",
+  "piece": "chestplate",
+  "attr1": ["dominance", 2, 5],
   "attr2": ["mending", 2, 5]
 }
+
+def format_number(num):
+  if num >= 1_000_000_000:
+    return f"{num / 1_000_000_000:.2f}b"
+  elif num >= 1_000_000:
+    return f"{num / 1_000_000:.2f}m"
+  elif num >= 1_000:
+    return f"{num / 1_000:.2f}k"
+  else:
+    return str(num)
 
 types = ["aurora", "crimson", "fervor", "hollow", "terror"]
 
@@ -22,6 +32,13 @@ for i in range(starting_armour["attr1"][2]):
 
     url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
     response = requests.request("GET", url)
+    try:
+      response.json()
+    except:
+      print("ran out of requests, continuing after a minute")
+      time.sleep(60)
+      url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
+      response = requests.request("GET", url)
 
     response = [{
       "attributes" : product["nbtData"]["data"]["attributes"],
@@ -60,6 +77,8 @@ attribute1_prices[starting_armour["attr1"][1]].append(
   }
 )
 
+attribute1_prices[starting_armour["attr1"][1]] = sorted(attribute1_prices[starting_armour["attr1"][1]], key=lambda x: x["startingBid"])
+
 def cost(l, prices, attribute, stack=[]):
     rl = stack.copy()
     if l == 1:
@@ -97,5 +116,12 @@ def cost(l, prices, attribute, stack=[]):
 
 results =  cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0])
 
+total = 0
 for result in results:
-    print(f"{result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
+  total += int(result['startingBid'])
+  print(f"{result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
+
+print(format_number(total))
+
+with open("data.json", "w") as file:
+   json.dump(attribute1_prices, file, indent=2)

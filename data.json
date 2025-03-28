@@ -4,334 +4,226 @@
     {
       "attributes": {
         "dominance": 1,
-        "mana_pool": 1
-      },
-      "startingBid": 345000,
-      "uuid": "82dcbda2173c45a09284dae6eb723b65",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "experience": 1
+        "experience": 2
       },
       "startingBid": 650000,
-      "uuid": "e4ed588e5f514a2e88b66633cee689dd",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "blazing_resistance": 1,
-        "mana_pool": 1
-      },
-      "startingBid": 659000,
-      "uuid": "190dfea4492e4945bb65994e462dc0a6",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "experience": 1
-      },
-      "startingBid": 799000,
-      "uuid": "eafe7ee816f74acc8939a33efbb2911f",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "lifeline": 2
-      },
-      "startingBid": 890000,
-      "uuid": "d2935664f8934e82ae55252de38c0c90",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "speed": 1
-      },
-      "startingBid": 1000000,
-      "uuid": "d1274ecf2d234bae8924d103320fa279",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "speed": 1
-      },
-      "startingBid": 1000000,
-      "uuid": "00322e149306452289d266f67eb7b342",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 1400000,
-      "uuid": "187b5b1b454e493d944e0b10b137025b",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 1600000,
-      "uuid": "b0b84b2fc51a4e2abf4e14a3dd0cf131",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 1600000,
-      "uuid": "a862b24d51454cf7b4d8b26a2d7c3fc6",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 1708000,
-      "uuid": "7225ec00f6294294a0ccfbb7225d9d05",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 1,
-        "mana_pool": 1
-      },
-      "startingBid": 2000000,
-      "uuid": "2825555e73a647768d800d843a9414f5",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 2000000,
-      "uuid": "1c33d9fb44cb4c61ab4ab2866f633898",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 2200000,
-      "uuid": "de0cb7f92602432eb30a98d243a238a5",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 2200000,
-      "uuid": "856e1de4a3eb4c7889225cbd82c96e65",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 2300000,
-      "uuid": "63b35478ece9418ab58451dd9ee5d332",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1
-      },
-      "startingBid": 2300000,
-      "uuid": "18a46d89163344b392fc7f3b4aab47cb",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "breeze": 1,
-        "mana_pool": 1
-      },
-      "startingBid": 4000000,
-      "uuid": "8a723cc167b8409787c985b6e7b30bff",
-      "type": "HOLLOW_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 2,
-        "mana_pool": 1
-      },
-      "startingBid": 4099999,
-      "uuid": "91427cbb84ff4088b0c758d9b4fe3678",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 1,
-        "undead_resistance": 1
-      },
-      "startingBid": 7555555,
-      "uuid": "188e3497c763498f9e143ec593a3d577",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 1,
-        "mana_pool": 1
-      },
-      "startingBid": 9000000,
-      "uuid": "1ff51c45401342f4a3a68adec4c35a82",
-      "type": "AURORA_BOOTS"
+      "uuid": "8a8dab14374e4d54bc4f723e3097f290",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
         "veteran": 1,
-        "mana_pool": 1
+        "dominance": 1
       },
-      "startingBid": 10000000,
-      "uuid": "a9ae3038e4ab41cdb2410150a4625514",
-      "type": "AURORA_BOOTS"
+      "startingBid": 900000,
+      "uuid": "6a9f3ac38bc34a63b7aa7c89c84ddb78",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 1,
+        "dominance": 1,
+        "undead_resistance": 2
+      },
+      "startingBid": 989000,
+      "uuid": "c2648f1a9868488c865041af88074d52",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 1,
         "undead_resistance": 1
       },
-      "startingBid": 10000000,
-      "uuid": "81f15761178740b6b2b429385390de3f",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 1000000,
+      "uuid": "0f515b7db6cd4196bb726778328ce8e6",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 2,
+        "dominance": 1
+      },
+      "startingBid": 1000000,
+      "uuid": "355b75f73bf042ea81ba28f138995a9f",
+      "type": "HOLLOW_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 1,
+        "lifeline": 1
+      },
+      "startingBid": 1100000,
+      "uuid": "da7b943a9a8a4a1abf8d9ff07bea6e9f",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
         "mana_regeneration": 1,
-        "mana_pool": 1
+        "dominance": 1
       },
-      "startingBid": 12222222,
-      "uuid": "92b79fce91a148bf805af443e28cf9cd",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 1999999,
+      "uuid": "20e1e6bbabb24fdc9810d6098ef77b88",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "life_regeneration": 1,
+        "dominance": 1
+      },
+      "startingBid": 3000000,
+      "uuid": "e7b634bad59143608a433d53efd7e773",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 2,
+        "dominance": 1
+      },
+      "startingBid": 3999000,
+      "uuid": "dddb116a6aac4c9d90ef14ab618c3cd0",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 1,
+        "experience": 1
+      },
+      "startingBid": 7500000,
+      "uuid": "82d2c673d8554b808deeef7035c528b9",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 1,
+        "mana_pool": 2
+      },
+      "startingBid": 8000000,
+      "uuid": "79e96024773547069ee0a29a6a895407",
+      "type": "TERROR_CHESTPLATE"
+    }
+  ],
+  [
+    {
+      "attributes": {
+        "dominance": 2
+      },
+      "startingBid": 0,
+      "uuid": "starting armour",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "experience": 2
+      },
+      "startingBid": 600000,
+      "uuid": "55a9aec69d9a4e8180bd3f837e52ba02",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "undead_resistance": 2
+      },
+      "startingBid": 750000,
+      "uuid": "e6e6c40117dd4cabbecf1e7e9d7596da",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
         "mana_regeneration": 2,
-        "mana_pool": 1
+        "dominance": 2
       },
-      "startingBid": 124999000,
-      "uuid": "e9b0250fcb66432498c3ab6a3cf9b978",
-      "type": "AURORA_BOOTS"
-    }
-  ],
-  [
+      "startingBid": 800000,
+      "uuid": "b12a849260334173b8d22d4d516c9068",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "breeze": 1,
+        "dominance": 2
+      },
+      "startingBid": 1000000,
+      "uuid": "bc9da13e499e4698bfb9e11d82e68df1",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "magic_find": 2
+      },
+      "startingBid": 1000000,
+      "uuid": "b223bb0ef6d346a385b0d5130375df8d",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "experience": 2
+      },
+      "startingBid": 1250000,
+      "uuid": "a39b436ec6b54db98e15ef2fa47d3862",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "lifeline": 2
+      },
+      "startingBid": 1900000,
+      "uuid": "fa11b7f92fb2414fb1c8892a8a2f1f68",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 2,
+        "dominance": 2
+      },
+      "startingBid": 2000000,
+      "uuid": "2abbbe810370488cb62cb218de307faf",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "lifeline": 1
+      },
+      "startingBid": 2000000,
+      "uuid": "7ec56631f89342bba51fa9756fd8dcb7",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "life_regeneration": 2,
+        "dominance": 2
+      },
+      "startingBid": 2700000,
+      "uuid": "e58c855e9c914a31a88fec1b639dcd5b",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 2,
+        "dominance": 2
+      },
+      "startingBid": 2798000,
+      "uuid": "a31e18732062499495441f55ffa5d4ce",
+      "type": "TERROR_CHESTPLATE"
+    },
     {
       "attributes": {
         "ender_resistance": 2,
-        "mana_pool": 2
+        "dominance": 2
       },
-      "startingBid": 1000000,
-      "uuid": "712e1188e9074a49a2579ec4b1c25f72",
-      "type": "FERVOR_BOOTS"
+      "startingBid": 3000000,
+      "uuid": "7021ebfcf0c1411fa8a3756a5e80ad01",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "life_regeneration": 2,
-        "mana_pool": 2
+        "dominance": 2
       },
-      "startingBid": 1650000,
-      "uuid": "4d525752c7484eb8a429429915944e5e",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 1800000,
-      "uuid": "0cf796587cd743f58a2bdba8f2e232bf",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 1999999,
-      "uuid": "07c5145aa68c4d61a587b799fbc9987d",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 2000000,
-      "uuid": "fa374f41e8c24725bb5350ef11d7b197",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 2100000,
-      "uuid": "9e43b1be70f8401caf4fc97b1474e85c",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2,
-        "lifeline": 2
-      },
-      "startingBid": 2200000,
-      "uuid": "bca08d7a4976486db5e3fb90ab63a75c",
-      "type": "HOLLOW_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 2500000,
-      "uuid": "5f049e86e10e4b7fb0e6c5554a36e65f",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "blazing_resistance": 1,
-        "mana_pool": 2
-      },
-      "startingBid": 2800000,
-      "uuid": "5577ffd370684664a5bbcd0e54857c8a",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 3290000,
-      "uuid": "291566786c174df6bf7e003fce9edb82",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 3400000,
-      "uuid": "34dde1c0a5d445878fa1c17b4664191d",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2
-      },
-      "startingBid": 3538899,
-      "uuid": "99eff2aececb4a8e8c2002a888322643",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2
-      },
-      "startingBid": 3549900,
-      "uuid": "f286b6cdee924829b857e5414908edbc",
+      "startingBid": 3200000,
+      "uuid": "1a840e89b6fb4b29a103f5481d5bde81",
       "type": "ATTRIBUTE_SHARD"
     },
     {
@@ -339,1279 +231,724 @@
         "dominance": 2,
         "mana_pool": 2
       },
-      "startingBid": 3600000,
-      "uuid": "46df264bccc148af95e34074dc462d28",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "breeze": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 3600000,
-      "uuid": "f3b1b1afd8fc4c0fb83ec68da79afa85",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2
-      },
-      "startingBid": 3900000,
-      "uuid": "0c552761b787473cbfe8eabb9ebf09b4",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2
-      },
-      "startingBid": 3950000,
-      "uuid": "7818111cd80049a490b340aa883fb1f2",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 4500000,
+      "uuid": "6f446dcea1b449688fc54ec2b26768d9",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "mana_regeneration": 2,
-        "mana_pool": 2
+        "dominance": 2
       },
-      "startingBid": 4490000,
-      "uuid": "b3f378f4db4449728a254e2108427fc0",
-      "type": "HOLLOW_BOOTS"
+      "startingBid": 4900000,
+      "uuid": "d28746e3fdd143d5ad72694eacba0bf4",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 2,
-        "arachno_resistance": 2
-      },
-      "startingBid": 4700000,
-      "uuid": "9424b82cb6024e71b22cc27c594bb59b",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2,
-        "magic_find": 1
-      },
-      "startingBid": 5000000,
-      "uuid": "25dc75a8d56b49b4ba59b9c5eb31c2b6",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "breeze": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 5000000,
-      "uuid": "7fb17ae47f014f8b8727f561fa8f1bb3",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 5000000,
-      "uuid": "658476a5c5aa45c1b34b70852d782769",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 2,
+        "dominance": 2,
         "mana_pool": 2
       },
       "startingBid": 6000000,
-      "uuid": "9ae53345f5e14f2b8ed8fd777af1cc84",
-      "type": "TERROR_BOOTS"
+      "uuid": "ff68c5448c4a4048803b8e3b083d126a",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mending": 1,
+        "dominance": 2,
         "mana_pool": 2
+      },
+      "startingBid": 6000000,
+      "uuid": "1b4f64b0a95d4fb6a528a79204d05fd7",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "lifeline": 2
       },
       "startingBid": 7000000,
-      "uuid": "27b59c9067fb469d8b3af9c7a5021db2",
-      "type": "AURORA_BOOTS"
+      "uuid": "184b0888e68d4116b92a4648304d5708",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "lifeline": 2
+      },
+      "startingBid": 8000000,
+      "uuid": "85fa88c925934ec795f67405e6fad63c",
+      "type": "FERVOR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "mana_pool": 2
+      },
+      "startingBid": 8000000,
+      "uuid": "07c1566b730f47418c1783233e551abc",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "mending": 2,
-        "mana_pool": 2
+        "dominance": 2
       },
-      "startingBid": 7140000,
-      "uuid": "7068fe7337d44c9bba35dcbb14c5247b",
-      "type": "AURORA_BOOTS"
+      "startingBid": 15000000,
+      "uuid": "2a369dfad6b642b79826321508dc5499",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "mending": 2,
-        "mana_pool": 2
+        "dominance": 2
       },
-      "startingBid": 8300000,
-      "uuid": "2696dd9ec4d640e38ec123e7b1342e2e",
-      "type": "AURORA_BOOTS"
+      "startingBid": 15000000,
+      "uuid": "1c4ebfcab57540c89d061391991036de",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 2,
-        "lifeline": 1
+        "veteran": 1,
+        "dominance": 2
       },
-      "startingBid": 9000000,
-      "uuid": "da521692e1114229923681b0e9d29ed4",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 19700000,
+      "uuid": "a734b117c3284f1ba0f1986e046fc679",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "life_regeneration": 2,
-        "mana_pool": 2
+        "mending": 2,
+        "dominance": 2
       },
-      "startingBid": 10000000,
-      "uuid": "51c7ff7e211848379b6b64103b880e34",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2,
-        "lifeline": 2
-      },
-      "startingBid": 12300000,
-      "uuid": "28b54bc724dc49649b320a14bf873a6f",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "breeze": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 14000000,
-      "uuid": "ccc3da3b1d674d6d80cafdf28030d210",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "blazing_resistance": 2,
-        "mana_pool": 2
-      },
-      "startingBid": 14000000,
-      "uuid": "7cf4dcaf3ec04d0a995aae5d04d9882b",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 2,
-        "lifeline": 2
-      },
-      "startingBid": 90000000,
-      "uuid": "60cf1537d2de40a7b036291f95b7c2dd",
-      "type": "TERROR_BOOTS"
+      "startingBid": 33000000,
+      "uuid": "9c93a0e695234ea597bae7aebb90173e",
+      "type": "CRIMSON_CHESTPLATE"
     }
   ],
   [
     {
       "attributes": {
-        "mana_pool": 3,
-        "magic_find": 3
+        "life_regeneration": 3,
+        "dominance": 3
       },
-      "startingBid": 5000000,
-      "uuid": "ecc8a349010e40fe9073cd303010a35f",
-      "type": "AURORA_BOOTS"
+      "startingBid": 2500000,
+      "uuid": "a6206b659d874a31a7f6e375517a20f5",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mending": 3,
+        "breeze": 3,
+        "dominance": 3
+      },
+      "startingBid": 8499000,
+      "uuid": "2af3bdc12c264ffd8aee804abb520375",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
         "mana_pool": 3
       },
-      "startingBid": 10000000,
-      "uuid": "436275fb7a3d4afba88a79ab1190b581",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3,
-        "lifeline": 3
-      },
-      "startingBid": 12000000,
-      "uuid": "c7c6aef365e248c5976a3c8c5d072aaa",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 128000000,
-      "uuid": "fb3f5e70d4af4c0e881c13eb881df677",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 129999999,
-      "uuid": "f466544e690a4d268a22f9cd1deed488",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 145000000,
-      "uuid": "d73cab994c5a4dffbed5a701ab758b29",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 170000000,
-      "uuid": "4222e36a8a8f4dc3a73f1c1ed3adc9a5",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 3200000,
-      "uuid": "e5bdf6bd5e7b4aac9958f9021350051c",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 3400000,
-      "uuid": "0a6a747db94d4f80bbe5b29121da6f34",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 9000000,
+      "uuid": "601e77fb0c4946828dfa279cefb3847c",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
         "ender_resistance": 3,
-        "mana_pool": 3
+        "dominance": 3
       },
-      "startingBid": 3999000,
-      "uuid": "758e2b89ff474be38e9ddd65d32258cc",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 18999000,
+      "uuid": "d3ecb33a60984a07a0bb264a228d42aa",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
+        "experience": 4
+      },
+      "startingBid": 20000000,
+      "uuid": "6491270cfd0f40109397bd31d85c7747",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
         "mana_regeneration": 3,
-        "mana_pool": 3
+        "dominance": 3
       },
-      "startingBid": 5780000,
-      "uuid": "5a52c8e18b224df8ae65528a9d2d367b",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 20000000,
+      "uuid": "f587f190dd3049319d10e3db9cc4ba18",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mending": 3,
+        "dominance": 3,
         "mana_pool": 3
       },
-      "startingBid": 6000000,
-      "uuid": "1f3befe478d940ab9f54f20312ec1b05",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 1760000,
+      "uuid": "112396a1eecf4784aa5eb2980666757d",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 3,
-        "lifeline": 3
+        "dominance": 3,
+        "undead_resistance": 3
       },
-      "startingBid": 6000000,
-      "uuid": "f80c25eaa88a43d4a941df8e73320d0f",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 2999999,
+      "uuid": "c43293782e0e4a3c89505a418d413f0b",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "veteran": 5,
+        "life_regeneration": 3,
+        "dominance": 3
+      },
+      "startingBid": 3500000,
+      "uuid": "7540edb76dd44c6bbc6c87716fc7d676",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
         "mana_pool": 3
       },
-      "startingBid": 18888888,
-      "uuid": "3dbad291f3e64e6db7ef89582ea05ac2",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 5000000,
+      "uuid": "fab8fbc9f6f047f5ba39d4b08651324b",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
+        "mana_pool": 3
+      },
+      "startingBid": 5000000,
+      "uuid": "c7707ce0aa9b4978b255279d2271e124",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
         "veteran": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 1260000,
-      "uuid": "b6084752a16f489c84bf78a20c2e6a1e",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 2100000,
-      "uuid": "1517523c128e484a9c1c01cbc5717ef1",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 2200000,
-      "uuid": "a8cb3592696e4980917edb75d7568b90",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3,
-        "speed": 3
-      },
-      "startingBid": 2300000,
-      "uuid": "f6ecd3cae66b4fe98bc5563f0d2d5f82",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 4000000,
-      "uuid": "7cfab098e7d244f4bb003d7cc9207544",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 5000000,
-      "uuid": "89a81f950ab447728c222849089f8d43",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3,
-        "magic_find": 3
-      },
-      "startingBid": 5000000,
-      "uuid": "e7e44a136b744a018851723ae000cbfa",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 1000000,
-      "uuid": "ca8a214eecd4423ab7a685a89c410b90",
-      "type": "HOLLOW_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 8000000,
-      "uuid": "12b08f9bc6764a0aa130d0423038b9cb",
-      "type": "HOLLOW_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 3500000,
-      "uuid": "fd03f08d90724ea6a4d76e4016699404",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 5500000,
-      "uuid": "9896878a290149b4bb90a983a52ce2cb",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 6000000,
-      "uuid": "6147322521dd4e84b699156a052b4ad9",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 2,
-        "mana_pool": 3
-      },
-      "startingBid": 15000000,
-      "uuid": "571600542e9949d2afb0c93d2122e3f0",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 16700000,
-      "uuid": "98f444a4306f40c2a15393e059fd7d74",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 37990000,
-      "uuid": "ed261fa6dd6b45498c0000bcfa66dfac",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3,
-        "lifeline": 3
-      },
-      "startingBid": 78000000,
-      "uuid": "06a21527f4054c40b9ac830a0ac4c15d",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7000000,
-      "uuid": "a5ac831f1fc9404db6a30f5e4fbd54f3",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7000000,
-      "uuid": "b01ce3775d9c4fcc980f584919b94c08",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7400000,
-      "uuid": "9dacef38f11f475cb863379cb083ba8c",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7400000,
-      "uuid": "2928a45acbac48db8ae5b45dd8e74c9a",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7499000,
-      "uuid": "c0ebfbb46fa84b10ad94c810b578c8cb",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 3
-      },
-      "startingBid": 7500000,
-      "uuid": "3f3e574060df4a90ba43e0b3dcd6af6e",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "arachno_resistance": 5
-      },
-      "startingBid": 4000000,
-      "uuid": "60b2245a429f4e0594d0710a268cb710",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 4270000,
-      "uuid": "52de1e764f384640ad7f2cb7ca91deab",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 4500000,
-      "uuid": "4b2f2fef14d546e9ac1bdf1d9a760c45",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "arachno_resistance": 5
-      },
-      "startingBid": 4900000,
-      "uuid": "3fd81999f6c9436ebae1768e312cec19",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 4999000,
-      "uuid": "655d3b59a3d0409481ece6cbf4911a21",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 5000000,
-      "uuid": "65b54f52d23343c4b2dac6b22243e4c5",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
-      },
-      "startingBid": 5500000,
-      "uuid": "2b0de2f3ab8f41d8bfba21959452ab70",
-      "type": "HOLLOW_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
-      },
-      "startingBid": 5600000,
-      "uuid": "af6033bc40964f57a3d6e10d483fa905",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "lifeline": 5
-      },
-      "startingBid": 6000000,
-      "uuid": "16cd1dc24f9040d4bedaa1851962d684",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
-      },
-      "startingBid": 6500000,
-      "uuid": "e06e1b07aa7f45e495b9d9ef7003c140",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "lifeline": 5
-      },
-      "startingBid": 6500000,
-      "uuid": "a9f9edd522f34f2d8f7f60a2a4f3a30e",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
-      },
-      "startingBid": 6900000,
-      "uuid": "bf6b2917e9194cf5994f5461dbfab4f2",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "breeze": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 7000000,
-      "uuid": "f716daa39b3342658f1f10c5577fc162",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 7320000,
-      "uuid": "611397e7e210435b93765e078d1107f3",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
-      },
-      "startingBid": 7500000,
-      "uuid": "c54a5e6b7a614294837c3260412ef635",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 6,
-        "mana_pool": 4
-      },
-      "startingBid": 7500000,
-      "uuid": "af024cfbe809424da59566d66cc9f603",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 7900000,
-      "uuid": "eac33fbf664f4574a0062e907af7e671",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 6,
-        "mana_pool": 4
-      },
-      "startingBid": 8000000,
-      "uuid": "0dbf0a1d955e4d4495cd277e7d1b7e05",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 8000000,
-      "uuid": "20599a51bfbf4630b4be65f1ae34d986",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 8000000,
-      "uuid": "2b49f3f20d504f14bc09b547567cad3e",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 4,
-        "magic_find": 5
+        "dominance": 3
       },
       "startingBid": 9000000,
-      "uuid": "fa3001a3614d4fb2ad985bcf6d21a96e",
-      "type": "AURORA_BOOTS"
+      "uuid": "3db3905b24654c1a88335eeb9a037a62",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "veteran": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 9990000,
-      "uuid": "8830494a97fa4b02b694f6466d710972",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
+        "dominance": 3,
+        "mana_pool": 3
       },
       "startingBid": 10000000,
-      "uuid": "f3504df4f58547c693a076953247d25b",
-      "type": "CRIMSON_BOOTS"
+      "uuid": "59a82346def64caaa9cef8eb8092ef6d",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 11500000,
-      "uuid": "60d066516cf344fa88bf4d74cae5f0b3",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 11999999,
-      "uuid": "42e376f61a8d44bfb299fc3d8b443d91",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
+        "veteran": 3,
+        "dominance": 3
       },
       "startingBid": 12000000,
-      "uuid": "7d63f810be144444bd34a91677cd7300",
-      "type": "CRIMSON_BOOTS"
+      "uuid": "ec2a415cd40b45d7ae5607e586525a65",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "mending": 3,
+        "dominance": 3
       },
-      "startingBid": 12999990,
-      "uuid": "fe0c014120134f48acce724fa768f15d",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 32500000,
+      "uuid": "7a2208b598b34decbf6750738feca39e",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "dominance": 3,
+        "speed": 3
       },
-      "startingBid": 12999990,
-      "uuid": "b6fd869202ec48d1b1eaad81a275b544",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 1000000,
+      "uuid": "9e74b114130b48c7bec8613346caf229",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "mana_regeneration": 3,
+        "dominance": 3
       },
-      "startingBid": 12999999,
-      "uuid": "c9b6c10e06f74094af2a6029a822c7b4",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 2000000,
+      "uuid": "63464c2624a74fa8984ab869dffee868",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "dominance": 3,
+        "speed": 3
       },
-      "startingBid": 13000000,
-      "uuid": "140682d888ae4bd5a7dfaad7f429e54d",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 700000,
+      "uuid": "50331554bbb148f3a1dd7038bd02f726",
+      "type": "HOLLOW_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "dominance": 3,
+        "mana_pool": 3
       },
-      "startingBid": 13000000,
-      "uuid": "2323f317d4a04a9c859004e3a52a66e7",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 1200000,
+      "uuid": "8a9cfbd55a884c7e9893b8fe2fda1641",
+      "type": "HOLLOW_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "dominance": 3,
+        "mana_pool": 3
       },
-      "startingBid": 13390000,
-      "uuid": "d182c89d9687431e8a494d67c96ff042",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 7900000,
+      "uuid": "ab3de18d0f8442868235c459a0dde75f",
+      "type": "HOLLOW_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "dominance": 3,
+        "lifeline": 3
       },
-      "startingBid": 13390000,
-      "uuid": "300940ab80764a319537e835dce556b3",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 1000000,
+      "uuid": "e837dee82ba74d5abf570cbd62b7b6d2",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "veteran": 3,
+        "dominance": 3
       },
-      "startingBid": 14000000,
-      "uuid": "0107510f2fcd405da6c14957c47cb8ac",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 1000000,
+      "uuid": "fe777b09ad674494b32a37156ab7c787",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "ender_resistance": 3,
+        "dominance": 3
       },
-      "startingBid": 14300000,
-      "uuid": "844e796fe6b1464da0ec55f6ecb6fd9c",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 1999000,
+      "uuid": "0c5764e126194f11bda729e9e5cb8dc6",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4
+        "life_regeneration": 3,
+        "dominance": 3
       },
-      "startingBid": 14400000,
-      "uuid": "dd3d75fdb5804131b23cf8b4ce1a0e62",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 2000000,
+      "uuid": "3b35ae461f474a9facdacd99c74fafe6",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4,
-        "arachno_resistance": 2
+        "dominance": 3,
+        "mana_pool": 3
       },
-      "startingBid": 17999999,
-      "uuid": "d7f180ecc2894f1f8091e80f72faf288",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 2560000,
+      "uuid": "3821e14f2f9240ec9be1174cc75394ff",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "veteran": 5,
-        "mana_pool": 4
+        "mana_regeneration": 3,
+        "dominance": 3
       },
-      "startingBid": 25000000,
-      "uuid": "8954ea261c9e43a882c282b550818284",
-      "type": "AURORA_BOOTS"
+      "startingBid": 3000000,
+      "uuid": "14a08845ef6b4e37ad2539314cc6f315",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
+        "dominance": 3,
+        "mana_pool": 3
       },
-      "startingBid": 26999000,
-      "uuid": "5edf04e88a6e45038ac74b3c6ef0c19c",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 3000000,
+      "uuid": "8e40b10ef2fa48cabaa56a1e62cf63a9",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4,
-        "magic_find": 7
+        "mending": 3,
+        "dominance": 3
       },
-      "startingBid": 33333333,
-      "uuid": "39c004ee25e141faa072e3aca3bd8cee",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 3180000,
+      "uuid": "ebf28971103b4e3e96b8c7ff3d99030d",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4,
+        "mending": 3,
+        "dominance": 3
+      },
+      "startingBid": 3900000,
+      "uuid": "bee0349dc2934c668b28f3bdb4176231",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
         "magic_find": 3
       },
-      "startingBid": 34990000,
-      "uuid": "89f095dfd30a48b6a892cf1c6d3a8dd1",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 4300000,
+      "uuid": "33953606cdb84ae086983862e82dabf7",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 4,
-        "lifeline": 5
+        "dominance": 3
       },
-      "startingBid": 82000000,
-      "uuid": "4032f1fbe0e049ec81e799a08ca3ba37",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 143000000,
-      "uuid": "69e7747469d24bc78090d97eb2d6b6a9",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 145000000,
-      "uuid": "7a57b85e13c7433b8c4568f659238ca9",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 160000000,
-      "uuid": "01d0b3f606b2462588f71e2875450f97",
-      "type": "AURORA_BOOTS"
+      "startingBid": 5000000,
+      "uuid": "98e6e807e8eb421788dcc7e023ed004b",
+      "type": "ATTRIBUTE_SHARD"
     }
   ],
   [
     {
       "attributes": {
-        "breeze": 4,
-        "mana_pool": 5
+        "mending": 5,
+        "dominance": 4
       },
-      "startingBid": 9000000,
-      "uuid": "c4aaccdfbc994048a2b859572e1a9252",
-      "type": "AURORA_BOOTS"
+      "startingBid": 2300000,
+      "uuid": "025df61519214f7c96fea01a6a2dc22e",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5,
-        "undead_resistance": 4
+        "dominance": 4,
+        "lifeline": 5
       },
-      "startingBid": 9000000,
-      "uuid": "9e57fffe934a44a8a2b53badbf5e3e2f",
-      "type": "AURORA_BOOTS"
+      "startingBid": 3000000,
+      "uuid": "ddd957deafae4dfcac3e920e203be9f5",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 5,
+        "dominance": 4
+      },
+      "startingBid": 6500000,
+      "uuid": "23282d6e431a462f9aff2492d7277c90",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 4,
+        "magic_find": 5
+      },
+      "startingBid": 7000000,
+      "uuid": "23df26438dea4e6595cda371344cfa03",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 4,
         "mana_pool": 5
       },
-      "startingBid": 9400000,
-      "uuid": "9d63f31aa07e472f9f8468e0d3742ba6",
-      "type": "AURORA_BOOTS"
+      "startingBid": 10200000,
+      "uuid": "5b85473b05764acea7e04d5a47579e5c",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_regeneration": 4,
+        "dominance": 4,
         "mana_pool": 5
       },
-      "startingBid": 9999000,
-      "uuid": "43bb51681bc64e28b4124c25c9915dc1",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 11500000,
+      "uuid": "023d39ef1ed44323acc8f3275e0dfcb8",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5,
-        "undead_resistance": 4
+        "mana_regeneration": 7,
+        "dominance": 4
       },
-      "startingBid": 10000000,
-      "uuid": "51b0500ab00c4a6ba0d772f5b1324fed",
-      "type": "AURORA_BOOTS"
+      "startingBid": 19860000,
+      "uuid": "b2a0b1adcb594f6b8e3186bab2e3d67d",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
-        "breeze": 4,
+        "dominance": 4,
+        "lifeline": 5
+      },
+      "startingBid": 4000000,
+      "uuid": "c3b7a19d09604c7496e9e95e2c5fd3c3",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 4,
+        "magic_find": 6
+      },
+      "startingBid": 25000000,
+      "uuid": "1df483be019445e8a6a88e83f4279038",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 5,
+        "dominance": 4
+      },
+      "startingBid": 38000000,
+      "uuid": "60bfa6639ecd401b8c3139961de82267",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 5,
+        "dominance": 4
+      },
+      "startingBid": 4000000,
+      "uuid": "ecb8f6f0735244a6af471f93f26fff2d",
+      "type": "FERVOR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 5,
+        "dominance": 4
+      },
+      "startingBid": 5000000,
+      "uuid": "caebfb1fb8dd44038eb1648838a079a9",
+      "type": "FERVOR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 4,
         "mana_pool": 5
       },
-      "startingBid": 10800000,
-      "uuid": "c690b75fc4314f9b89270c2ea99709a4",
-      "type": "AURORA_BOOTS"
+      "startingBid": 5900000,
+      "uuid": "00d42772e973499b90bca9bf8dd12740",
+      "type": "HOLLOW_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 5,
+        "dominance": 4
+      },
+      "startingBid": 4280000,
+      "uuid": "6b333ccd7aac4521a6939f3b4f6b4dd6",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 5,
+        "dominance": 4
+      },
+      "startingBid": 5400000,
+      "uuid": "74dca43df5f944e1af392b55027e8d8b",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 4,
+        "speed": 5
+      },
+      "startingBid": 7400000,
+      "uuid": "358d4f72814145c2bea5bac836968d76",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 5,
+        "dominance": 4
+      },
+      "startingBid": 49888888,
+      "uuid": "14852a1e08be4c5688c6f633ee5c1307",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 4
+      },
+      "startingBid": 6398999,
+      "uuid": "ee97adb0577f43778a6e884a75695d9d",
+      "type": "ATTRIBUTE_SHARD"
+    }
+  ],
+  [
+    {
+      "attributes": {
+        "dominance": 5,
+        "magic_find": 4
+      },
+      "startingBid": 5000000,
+      "uuid": "4a7fe509a7f1406498352c9aaf955d19",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "mana_pool": 4
+      },
+      "startingBid": 8000000,
+      "uuid": "f16d135545174f008b4b9aeef5bb1e6c",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "mana_pool": 4
+      },
+      "startingBid": 9000000,
+      "uuid": "918cbedda19f4e10947dc6366b5c413c",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "magic_find": 8
+      },
+      "startingBid": 58000000,
+      "uuid": "48419229e9a74c6c93c6cbd283fd77a4",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "mana_pool": 4
+      },
+      "startingBid": 3000000,
+      "uuid": "3bfb744ac85d4fc597a79f3e28419a47",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "fortitude": 4
+      },
+      "startingBid": 3000000,
+      "uuid": "6d0389948a6040be92cd390b83b1bd70",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "speed": 4
+      },
+      "startingBid": 3900000,
+      "uuid": "7cda01f7c2ca4289947512422e550972",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "arachno_resistance": 4
+      },
+      "startingBid": 3900000,
+      "uuid": "bf4414e1f130440abe70c0398c824582",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 4,
+        "dominance": 5
+      },
+      "startingBid": 11900000,
+      "uuid": "ac008d3f421f490cb6abc27f39f9a0ca",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 5,
+        "mana_pool": 5
+      },
+      "startingBid": 45000000,
+      "uuid": "132056c1c8d74c388a878e9b25daf43a",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
         "mending": 4,
-        "mana_pool": 5
+        "dominance": 5
       },
-      "startingBid": 11100000,
-      "uuid": "8fa1832c799d4c398ee9da15cd339e28",
-      "type": "AURORA_BOOTS"
+      "startingBid": 1999995,
+      "uuid": "1a09a7a259ed4a13bddf06cf26ea482f",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "veteran": 5,
-        "mana_pool": 5
+        "dominance": 5,
+        "magic_find": 4
       },
-      "startingBid": 13500000,
-      "uuid": "016b7ac883fd48249cb0c92399a04496",
-      "type": "CRIMSON_BOOTS"
+      "startingBid": 2000000,
+      "uuid": "69b780c3fba24f8bae5baa85d34b62a2",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 4,
-        "mana_pool": 5
+        "dominance": 5,
+        "magic_find": 4
       },
-      "startingBid": 16000000,
-      "uuid": "e79233765f7b440b8e887ffaa8a9af69",
-      "type": "HOLLOW_BOOTS"
+      "startingBid": 3900000,
+      "uuid": "98cce11010334c0b9dc0618cb5d5b103",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_regeneration": 4,
-        "mana_pool": 5
+        "dominance": 5,
+        "mana_pool": 4
       },
-      "startingBid": 17000000,
-      "uuid": "90c4c040ecce4042b1b75aa8ac4cd841",
-      "type": "HOLLOW_BOOTS"
+      "startingBid": 5990000,
+      "uuid": "5b35d95bdc62486aaffc5af2b1c0f3f4",
+      "type": "HOLLOW_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 4,
-        "mana_pool": 5
+        "mending": 4,
+        "dominance": 5
       },
-      "startingBid": 23700000,
-      "uuid": "ddab6fc4af174e71a3d24b004c09949f",
-      "type": "TERROR_BOOTS"
+      "startingBid": 3550000,
+      "uuid": "282d570269f544719ef84cd0beace106",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5
+        "dominance": 5,
+        "mana_pool": 4
       },
-      "startingBid": 31900000,
-      "uuid": "e2f340321c85408d82fea71516ba3321",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 3780000,
+      "uuid": "c33d372d53e1437fa7a7e0b6d55f2c00",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5
+        "blazing_resistance": 4,
+        "dominance": 5
       },
-      "startingBid": 36999000,
-      "uuid": "47e2c5e47d124dccb79ee5b2822fa102",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 3800000,
+      "uuid": "b8bf007b46ca466bb2a5d21caa1de0b9",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5
+        "dominance": 5,
+        "mana_pool": 2
       },
-      "startingBid": 37000000,
-      "uuid": "3c1a2661f6f74c65ba731441f7fdb667",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 22222222,
+      "uuid": "4061a0d904a44c7f975d7bdaa0696547",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5
+        "dominance": 5,
+        "speed": 5
       },
-      "startingBid": 37000000,
-      "uuid": "824bcdc94c6e4b21b5623773af97d758",
-      "type": "ATTRIBUTE_SHARD"
+      "startingBid": 28000000,
+      "uuid": "7d5883236c2b4816b9dcf69f43d5ab5e",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mana_pool": 5
+        "mending": 10,
+        "dominance": 5
       },
-      "startingBid": 37000000,
-      "uuid": "99696818e22c4a42817226e44e0fe349",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5
-      },
-      "startingBid": 40000000,
-      "uuid": "3473432728684a169b2c95066e7b38db",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5
-      },
-      "startingBid": 40000000,
-      "uuid": "9bc4ef674fbb4423a201f2e88bb53bf5",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5,
-        "lifeline": 4
-      },
-      "startingBid": 73333333,
-      "uuid": "477e5db454594e4cb02b0a7eddab4e79",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5,
-        "lifeline": 4
-      },
-      "startingBid": 80500000,
-      "uuid": "b5fed8c3ecab4ff79c6f33d959f290e5",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5,
-        "lifeline": 4
-      },
-      "startingBid": 81000000,
-      "uuid": "ce4188c3faa24bfa877a5c9a64040773",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 5,
-        "lifeline": 4
-      },
-      "startingBid": 87000000,
-      "uuid": "6b557d841ea047a5a4615cf63c2288aa",
-      "type": "TERROR_BOOTS"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "veteran": 5,
-        "mana_pool": 6
-      },
-      "startingBid": 23220000,
-      "uuid": "4c70e7634f874b0680253b3bd0ae646d",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 6,
-        "lifeline": 5
-      },
-      "startingBid": 44990000,
-      "uuid": "3164d50eed1741d0a2e760946c6572fa",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 6,
-        "magic_find": 6
-      },
-      "startingBid": 18888888,
-      "uuid": "2001f182a24c4c5b8f1df4201489ad5e",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 6,
-        "mana_pool": 6
-      },
-      "startingBid": 35000000,
-      "uuid": "dc7b3047e32646af9537d03ed1ef1e95",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "mana_pool": 6
-      },
-      "startingBid": 38000000,
-      "uuid": "781124de6d7a4ca99bc8cf5062e414cf",
-      "type": "CRIMSON_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 6,
-        "mana_pool": 6
-      },
-      "startingBid": 39000000,
-      "uuid": "f86f8ae432bd4e1fb05f4922e1940eb8",
-      "type": "CRIMSON_BOOTS"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mana_pool": 7,
-        "arachno_resistance": 4
-      },
-      "startingBid": 35000000,
-      "uuid": "da05499c7a3c4437a1f3fe1e66179e28",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 7
-      },
-      "startingBid": 124500000,
-      "uuid": "1e5594d67aaf456ab11271d333b6c8c2",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 7
-      },
-      "startingBid": 125000000,
-      "uuid": "5d0b46cedbdf481987d327518793155a",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mana_regeneration": 8,
-        "mana_pool": 8
-      },
-      "startingBid": 315353453,
-      "uuid": "2b16defff5594db9bbe556344f31f6c9",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "veteran": 5,
-        "mana_pool": 8
-      },
-      "startingBid": 58999999,
-      "uuid": "e5c5f15310564837998ea831ad495919",
-      "type": "FERVOR_BOOTS"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 5,
-        "mana_pool": 8
-      },
-      "startingBid": 58999999,
-      "uuid": "61becc6a82f9484182d5cca64bcf4b7c",
-      "type": "TERROR_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 8
-      },
-      "startingBid": 265300000,
-      "uuid": "56332ba23c1d4d9bbb231294c5957cfe",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 8
-      },
-      "startingBid": 265499000,
-      "uuid": "efbd3cc51113448296d19e53d88d2df3",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 8
-      },
-      "startingBid": 265500000,
-      "uuid": "521dec0470cb44bba3b2696344df02a3",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 8
-      },
-      "startingBid": 266999999,
-      "uuid": "bd3d60b788254e979bcbcff49f624683",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mana_pool": 9
-      },
-      "startingBid": 549000000,
-      "uuid": "c72cfaa7007d4ad6a6c95248f43fc3c8",
-      "type": "ATTRIBUTE_SHARD"
-    },
-    {
-      "attributes": {
-        "mana_pool": 9
-      },
-      "startingBid": 550000000,
-      "uuid": "e83d7f02dcbb4736a940f968a29f74ef",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mana_regeneration": 10,
-        "mana_pool": 10
-      },
-      "startingBid": 476900000,
-      "uuid": "5280ce0e910a4dfb9b54ccacff2d4a7f",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 10,
-        "mana_pool": 10
-      },
-      "startingBid": 477777777,
-      "uuid": "62d0ebdd77d14261987185320aaf6caf",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 10,
-        "mana_pool": 10
-      },
-      "startingBid": 484000000,
-      "uuid": "b47223faf149481b8d0115e61cd799dc",
-      "type": "AURORA_BOOTS"
-    },
-    {
-      "attributes": {
-        "mana_pool": 10,
-        "lifeline": 10
-      },
-      "startingBid": 480000000,
-      "uuid": "4207c0aa9e7042f6b0cee003be6a6e63",
-      "type": "TERROR_BOOTS"
+      "startingBid": 130000000,
+      "uuid": "e93740311ca245849e83046481aeca62",
+      "type": "TERROR_CHESTPLATE"
     }
   ]
 ]
