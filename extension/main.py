@@ -4,19 +4,17 @@ starting_armour = {
   "tier": "burning",
   "type": "aurora",
   "piece": "boots",
-  "attr1": ["dominance", 2, 10],
-  "attr2": ["mending", 2, 10]
+  "attr1": ["mending", 2, 6],
+  "attr2": ["mending", 2, 5]
 }
 
 types = ["aurora", "crimson", "fervor", "hollow", "terror"]
 
 attribute1_prices = [[]]
-attribute2_prices = [[]]
 
 for i in range(starting_armour["attr1"][2]):
     
   level_prices1 = []
-  level_prices2 = []
 
   for type in types:
     armour_tag = (type+"_"+starting_armour["piece"]).upper()
@@ -34,23 +32,6 @@ for i in range(starting_armour["attr1"][2]):
 
     level_prices1 += response
 
-    print(armour_tag, starting_armour['attr2'][0], i+1)
-
-    url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{starting_armour['attr2'][0]}={str(i+1)}"
-    response = requests.request("GET", url)
-    new_response = []
-
-    for product in response.json():
-      if product not in level_prices1:
-        new_response.append({
-          "attributes" : product["nbtData"]["data"]["attributes"],
-          "startingBid": product["startingBid"],
-          "uuid": product["uuid"],
-          "type": armour_tag
-        })
-
-    level_prices2 += new_response
-
   #attribute shards
 
   url = f"https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
@@ -66,21 +47,18 @@ for i in range(starting_armour["attr1"][2]):
     } for product in response.json()
   ]
 
-  url = f"https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?{starting_armour['attr2'][0]}={str(i+1)}"
-  response = requests.request("GET", url)
-  level_prices2 += [
-    {
-      "attributes": {
-        starting_armour["attr2"][0]: i+1
-      },
-      "startingBid": product["startingBid"],
-      "uuid": product["uuid"],
-      "type": "ATTRIBUTE_SHARD"
-    } for product in response.json()
-  ]
-
   attribute1_prices.append(level_prices1)
-  attribute2_prices.append(level_prices2)
+
+attribute1_prices[starting_armour["attr1"][1]].append(
+  {
+    "attributes": {
+      starting_armour["attr1"][0]: starting_armour["attr1"][1]
+    },
+    "startingBid": 0,
+    "uuid": "starting armour",
+    "type": (type+"_"+starting_armour["piece"]).upper()
+  }
+)
 
 def cost(l, prices, attribute, stack=[]):
     rl = stack.copy()
@@ -117,5 +95,7 @@ def cost(l, prices, attribute, stack=[]):
     else:
         return compareStack
 
-print(cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0]))
-print(cost(starting_armour["attr2"][2], attribute2_prices, starting_armour["attr2"][0]))
+results =  cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0])
+
+for result in results:
+    print(f"{result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
