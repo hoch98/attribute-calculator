@@ -42,6 +42,7 @@ body div {
     margin-top: 2%;
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .dark button {
@@ -49,16 +50,24 @@ body div {
     color: white;
 }
 
-#calculateButton {
+#calculateContainer button {
     font-size: large;
     border-width: 1px;
     border-radius: 5px;
 }
+#contents {
+    display: flex;
+}
 
 #resultsContainer {
-    width:50%;
+    width: 50%;
     margin-top: 2%;
     text-align: center;
+}
+
+#saves {
+    width: 50%;
+    margin-top: 1%;
 }
 
 .costSum {
