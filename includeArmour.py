@@ -4,7 +4,7 @@ starting_armour = {
   "tier": "burning",
   "type": "crimson",
   "piece": "chestplate",
-  "attr1": ["dominance", 2, 5],
+  "attr1": ["dominance", 2, 3],
 }
 
 def format_number(num):
@@ -118,7 +118,7 @@ results =  cost(starting_armour["attr1"][2], attribute1_prices, starting_armour[
 total = 0
 for i, result in enumerate(results):
   total += int(result['startingBid'])
-  print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
+  print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}: /viewauction {result['uuid']}")
 
 print(format_number(total))
 

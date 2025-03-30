@@ -4,56 +4,56 @@
     {
       "attributes": {
         "dominance": 1,
-        "experience": 2
+        "lifeline": 1
       },
-      "startingBid": 650000,
-      "uuid": "8a8dab14374e4d54bc4f723e3097f290",
-      "type": "CRIMSON_CHESTPLATE"
+      "startingBid": 588000,
+      "uuid": "72c9211725e14669b0a004f377faa945",
+      "type": "FERVOR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "ender_resistance": 1,
+        "dominance": 1
+      },
+      "startingBid": 799999,
+      "uuid": "b0dd7b25c67a4f16b7dd4c4e3ff2b53f",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "veteran": 1,
         "dominance": 1
       },
-      "startingBid": 900000,
-      "uuid": "6a9f3ac38bc34a63b7aa7c89c84ddb78",
+      "startingBid": 999000,
+      "uuid": "aa0aab12b4714b74b4432a75f5b1c545",
       "type": "FERVOR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 1,
-        "undead_resistance": 2
-      },
-      "startingBid": 989000,
-      "uuid": "c2648f1a9868488c865041af88074d52",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 1,
-        "undead_resistance": 1
-      },
-      "startingBid": 1000000,
-      "uuid": "0f515b7db6cd4196bb726778328ce8e6",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "veteran": 2,
-        "dominance": 1
-      },
-      "startingBid": 1000000,
-      "uuid": "355b75f73bf042ea81ba28f138995a9f",
-      "type": "HOLLOW_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 1,
         "lifeline": 1
       },
+      "startingBid": 1000000,
+      "uuid": "da0ac0b6b96948b1b2013fa6389cdd5d",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 1,
+        "dominance": 1
+      },
+      "startingBid": 1000000,
+      "uuid": "c2438865a121449baa803e58a946edf0",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 1,
+        "dominance": 1
+      },
       "startingBid": 1100000,
-      "uuid": "da7b943a9a8a4a1abf8d9ff07bea6e9f",
-      "type": "CRIMSON_CHESTPLATE"
+      "uuid": "b58b5501c4584e5fb448248647d9d9ac",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
@@ -66,29 +66,29 @@
     },
     {
       "attributes": {
-        "life_regeneration": 1,
+        "mending": 1,
         "dominance": 1
       },
-      "startingBid": 3000000,
-      "uuid": "e7b634bad59143608a433d53efd7e773",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 2,
-        "dominance": 1
-      },
-      "startingBid": 3999000,
-      "uuid": "dddb116a6aac4c9d90ef14ab618c3cd0",
-      "type": "TERROR_CHESTPLATE"
+      "startingBid": 2199999,
+      "uuid": "90a4ab3522d9484d8b607e877c080440",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 1,
-        "experience": 1
+        "breeze": 1
       },
-      "startingBid": 7500000,
-      "uuid": "82d2c673d8554b808deeef7035c528b9",
+      "startingBid": 2200000,
+      "uuid": "2d4fe9be675e4bcb80dfacc60e07d3d5",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 2,
+        "dominance": 1
+      },
+      "startingBid": 3500000,
+      "uuid": "482f9d8f5eef4480b644c6040d1bd5ed",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
@@ -106,108 +106,51 @@
       "attributes": {
         "dominance": 2
       },
-      "startingBid": 0,
-      "uuid": "starting armour",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "experience": 2
-      },
-      "startingBid": 600000,
-      "uuid": "55a9aec69d9a4e8180bd3f837e52ba02",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "undead_resistance": 2
-      },
-      "startingBid": 750000,
-      "uuid": "e6e6c40117dd4cabbecf1e7e9d7596da",
-      "type": "AURORA_CHESTPLATE"
+      "startingBid": 1800000,
+      "uuid": "7a38631ba3d34d75b43ecfdfcaa77554",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
         "mana_regeneration": 2,
         "dominance": 2
-      },
-      "startingBid": 800000,
-      "uuid": "b12a849260334173b8d22d4d516c9068",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "breeze": 1,
-        "dominance": 2
-      },
-      "startingBid": 1000000,
-      "uuid": "bc9da13e499e4698bfb9e11d82e68df1",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "magic_find": 2
-      },
-      "startingBid": 1000000,
-      "uuid": "b223bb0ef6d346a385b0d5130375df8d",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "experience": 2
-      },
-      "startingBid": 1250000,
-      "uuid": "a39b436ec6b54db98e15ef2fa47d3862",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "lifeline": 2
       },
       "startingBid": 1900000,
-      "uuid": "fa11b7f92fb2414fb1c8892a8a2f1f68",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 2,
-        "dominance": 2
-      },
-      "startingBid": 2000000,
-      "uuid": "2abbbe810370488cb62cb218de307faf",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2,
-        "lifeline": 1
-      },
-      "startingBid": 2000000,
-      "uuid": "7ec56631f89342bba51fa9756fd8dcb7",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 2,
-        "dominance": 2
-      },
-      "startingBid": 2700000,
-      "uuid": "e58c855e9c914a31a88fec1b639dcd5b",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 2,
-        "dominance": 2
-      },
-      "startingBid": 2798000,
-      "uuid": "a31e18732062499495441f55ffa5d4ce",
+      "uuid": "b24634a397354a6da921f7269f1e7f41",
       "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2
+      },
+      "startingBid": 1900000,
+      "uuid": "315f690ec96f44e2b43cc8163022cede",
+      "type": "ATTRIBUTE_SHARD"
+    },
+    {
+      "attributes": {
+        "dominance": 2
+      },
+      "startingBid": 2000000,
+      "uuid": "8a9e19659b774d00bd4ee99486556502",
+      "type": "ATTRIBUTE_SHARD"
+    },
+    {
+      "attributes": {
+        "dominance": 2
+      },
+      "startingBid": 2000000,
+      "uuid": "04a395b87f434c20b56315013c10d36e",
+      "type": "ATTRIBUTE_SHARD"
+    },
+    {
+      "attributes": {
+        "mending": 2,
+        "dominance": 2
+      },
+      "startingBid": 3000000,
+      "uuid": "1dd04fef0cb247f5966b6598ec911a67",
+      "type": "FERVOR_CHESTPLATE"
     },
     {
       "attributes": {
@@ -215,25 +158,17 @@
         "dominance": 2
       },
       "startingBid": 3000000,
-      "uuid": "7021ebfcf0c1411fa8a3756a5e80ad01",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 2
-      },
-      "startingBid": 3200000,
-      "uuid": "1a840e89b6fb4b29a103f5481d5bde81",
-      "type": "ATTRIBUTE_SHARD"
+      "uuid": "ccebf893e6094881b931cf6faff4411c",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 2,
-        "mana_pool": 2
+        "speed": 2
       },
-      "startingBid": 4500000,
-      "uuid": "6f446dcea1b449688fc54ec2b26768d9",
-      "type": "TERROR_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "22029c9856424e2fba728bf5fda1313e",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
@@ -246,30 +181,57 @@
     },
     {
       "attributes": {
-        "dominance": 2,
-        "mana_pool": 2
+        "ender_resistance": 2,
+        "dominance": 2
       },
-      "startingBid": 6000000,
-      "uuid": "ff68c5448c4a4048803b8e3b083d126a",
-      "type": "AURORA_CHESTPLATE"
+      "startingBid": 5000000,
+      "uuid": "939581e2f69b4575a719a0029ea16a93",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 2,
         "mana_pool": 2
       },
-      "startingBid": 6000000,
-      "uuid": "1b4f64b0a95d4fb6a528a79204d05fd7",
+      "startingBid": 5200000,
+      "uuid": "48586647eff04d68a915761cc6720cce",
+      "type": "TERROR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "mana_pool": 2
+      },
+      "startingBid": 5900000,
+      "uuid": "e8b6b124d35241b98630cfb404815fd3",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 2,
-        "lifeline": 2
+        "veteran": 2,
+        "dominance": 2
       },
       "startingBid": 7000000,
-      "uuid": "184b0888e68d4116b92a4648304d5708",
+      "uuid": "9a57a27a1778448eb661caaedc341fd2",
       "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "veteran": 2,
+        "dominance": 2
+      },
+      "startingBid": 7500000,
+      "uuid": "622ed451296f4cf98361d6879d1d2e80",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 2,
+        "mana_pool": 2
+      },
+      "startingBid": 7999999,
+      "uuid": "60a464e689224ef39ec71cf6715fbfae",
+      "type": "AURORA_CHESTPLATE"
     },
     {
       "attributes": {
@@ -282,11 +244,11 @@
     },
     {
       "attributes": {
-        "dominance": 2,
-        "mana_pool": 2
+        "mending": 1,
+        "dominance": 2
       },
-      "startingBid": 8000000,
-      "uuid": "07c1566b730f47418c1783233e551abc",
+      "startingBid": 14900000,
+      "uuid": "a49f23a49fc84d0d86125fb225c87f63",
       "type": "TERROR_CHESTPLATE"
     },
     {
@@ -300,21 +262,30 @@
     },
     {
       "attributes": {
-        "mending": 2,
+        "veteran": 1,
         "dominance": 2
       },
-      "startingBid": 15000000,
-      "uuid": "1c4ebfcab57540c89d061391991036de",
+      "startingBid": 18700000,
+      "uuid": "1b0a9c7f095748f188bd9213fa8dcc24",
       "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "veteran": 1,
+        "mending": 2,
         "dominance": 2
       },
-      "startingBid": 19700000,
-      "uuid": "a734b117c3284f1ba0f1986e046fc679",
-      "type": "TERROR_CHESTPLATE"
+      "startingBid": 19000000,
+      "uuid": "b50172658d814ffd869a7ae13e615400",
+      "type": "CRIMSON_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 2,
+        "dominance": 2
+      },
+      "startingBid": 20000000,
+      "uuid": "6124995977df408198469842b35d3e37",
+      "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
@@ -329,29 +300,11 @@
   [
     {
       "attributes": {
-        "life_regeneration": 3,
+        "mana_regeneration": 3,
         "dominance": 3
       },
-      "startingBid": 2500000,
-      "uuid": "a6206b659d874a31a7f6e375517a20f5",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "breeze": 3,
-        "dominance": 3
-      },
-      "startingBid": 8499000,
-      "uuid": "2af3bdc12c264ffd8aee804abb520375",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 9000000,
-      "uuid": "601e77fb0c4946828dfa279cefb3847c",
+      "startingBid": 800000,
+      "uuid": "92f3e4b55ff343baad08ad044f5d83df",
       "type": "AURORA_CHESTPLATE"
     },
     {
@@ -359,8 +312,53 @@
         "ender_resistance": 3,
         "dominance": 3
       },
-      "startingBid": 18999000,
-      "uuid": "d3ecb33a60984a07a0bb264a228d42aa",
+      "startingBid": 900000,
+      "uuid": "699587e743fc4b13889f423d162edb77",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mana_regeneration": 3,
+        "dominance": 3
+      },
+      "startingBid": 1000000,
+      "uuid": "f2e2ac94030c484988b302908a48071e",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
+        "arachno_resistance": 3
+      },
+      "startingBid": 1000000,
+      "uuid": "5def9527f9e948418ece4ac63c7bd6ab",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 3,
+        "dominance": 3
+      },
+      "startingBid": 1500000,
+      "uuid": "c8336a2315ed4453bb346909a907fc6c",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "mending": 3,
+        "dominance": 3
+      },
+      "startingBid": 3000000,
+      "uuid": "e978b1d9f59f4306b1ef4d24db66a2d1",
+      "type": "AURORA_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "dominance": 3,
+        "mana_pool": 3
+      },
+      "startingBid": 9999999,
+      "uuid": "87ad3169ba3742cbafc6b151c8247757",
       "type": "AURORA_CHESTPLATE"
     },
     {
@@ -374,29 +372,20 @@
     },
     {
       "attributes": {
-        "mana_regeneration": 3,
-        "dominance": 3
-      },
-      "startingBid": 20000000,
-      "uuid": "f587f190dd3049319d10e3db9cc4ba18",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
         "dominance": 3,
-        "mana_pool": 3
+        "undead_resistance": 3
       },
-      "startingBid": 1760000,
-      "uuid": "112396a1eecf4784aa5eb2980666757d",
+      "startingBid": 1500000,
+      "uuid": "5acd80af26b042b89c7ca81108ab7b5f",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 3,
-        "undead_resistance": 3
+        "ender_resistance": 3,
+        "dominance": 3
       },
-      "startingBid": 2999999,
-      "uuid": "c43293782e0e4a3c89505a418d413f0b",
+      "startingBid": 2100000,
+      "uuid": "9c1541b869594fedbd26b2519495646b",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
@@ -404,53 +393,17 @@
         "life_regeneration": 3,
         "dominance": 3
       },
-      "startingBid": 3500000,
-      "uuid": "7540edb76dd44c6bbc6c87716fc7d676",
+      "startingBid": 3000000,
+      "uuid": "e173b1e298ac41a79996e0e3370ce7df",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 3,
-        "mana_pool": 3
+        "magic_find": 3
       },
-      "startingBid": 5000000,
-      "uuid": "fab8fbc9f6f047f5ba39d4b08651324b",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 5000000,
-      "uuid": "c7707ce0aa9b4978b255279d2271e124",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "veteran": 3,
-        "dominance": 3
-      },
-      "startingBid": 9000000,
-      "uuid": "3db3905b24654c1a88335eeb9a037a62",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 10000000,
-      "uuid": "59a82346def64caaa9cef8eb8092ef6d",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "veteran": 3,
-        "dominance": 3
-      },
-      "startingBid": 12000000,
-      "uuid": "ec2a415cd40b45d7ae5607e586525a65",
+      "startingBid": 23000000,
+      "uuid": "a040979ff59b47c3a6a532226de23fe7",
       "type": "CRIMSON_CHESTPLATE"
     },
     {
@@ -464,11 +417,20 @@
     },
     {
       "attributes": {
-        "dominance": 3,
-        "speed": 3
+        "veteran": 3,
+        "dominance": 3
       },
-      "startingBid": 1000000,
-      "uuid": "9e74b114130b48c7bec8613346caf229",
+      "startingBid": 950000,
+      "uuid": "13f6cb9d274b49e6b8943a38e8503a5d",
+      "type": "FERVOR_CHESTPLATE"
+    },
+    {
+      "attributes": {
+        "life_regeneration": 3,
+        "dominance": 3
+      },
+      "startingBid": 1100000,
+      "uuid": "1057de0f60bd480db3c55f87e331739b",
       "type": "FERVOR_CHESTPLATE"
     },
     {
@@ -476,35 +438,8 @@
         "mana_regeneration": 3,
         "dominance": 3
       },
-      "startingBid": 2000000,
-      "uuid": "63464c2624a74fa8984ab869dffee868",
-      "type": "FERVOR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "speed": 3
-      },
       "startingBid": 700000,
-      "uuid": "50331554bbb148f3a1dd7038bd02f726",
-      "type": "HOLLOW_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 1200000,
-      "uuid": "8a9cfbd55a884c7e9893b8fe2fda1641",
-      "type": "HOLLOW_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 3,
-        "mana_pool": 3
-      },
-      "startingBid": 7900000,
-      "uuid": "ab3de18d0f8442868235c459a0dde75f",
+      "uuid": "641d2d9b04dc4840beba5f00c0d12153",
       "type": "HOLLOW_CHESTPLATE"
     },
     {
@@ -512,35 +447,8 @@
         "dominance": 3,
         "lifeline": 3
       },
-      "startingBid": 1000000,
-      "uuid": "e837dee82ba74d5abf570cbd62b7b6d2",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "veteran": 3,
-        "dominance": 3
-      },
-      "startingBid": 1000000,
-      "uuid": "fe777b09ad674494b32a37156ab7c787",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "ender_resistance": 3,
-        "dominance": 3
-      },
-      "startingBid": 1999000,
-      "uuid": "0c5764e126194f11bda729e9e5cb8dc6",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "life_regeneration": 3,
-        "dominance": 3
-      },
-      "startingBid": 2000000,
-      "uuid": "3b35ae461f474a9facdacd99c74fafe6",
+      "startingBid": 1200000,
+      "uuid": "0eeab7fae8b34cf5966c8b13b1901eda",
       "type": "TERROR_CHESTPLATE"
     },
     {
@@ -548,44 +456,17 @@
         "dominance": 3,
         "mana_pool": 3
       },
-      "startingBid": 2560000,
-      "uuid": "3821e14f2f9240ec9be1174cc75394ff",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 3,
-        "dominance": 3
-      },
-      "startingBid": 3000000,
-      "uuid": "14a08845ef6b4e37ad2539314cc6f315",
+      "startingBid": 2800000,
+      "uuid": "402a0e12a3d0480fb1c165d7271281b6",
       "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
         "dominance": 3,
-        "mana_pool": 3
+        "magic_find": 3
       },
-      "startingBid": 3000000,
-      "uuid": "8e40b10ef2fa48cabaa56a1e62cf63a9",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "dominance": 3
-      },
-      "startingBid": 3180000,
-      "uuid": "ebf28971103b4e3e96b8c7ff3d99030d",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 3,
-        "dominance": 3
-      },
-      "startingBid": 3900000,
-      "uuid": "bee0349dc2934c668b28f3bdb4176231",
+      "startingBid": 4000000,
+      "uuid": "6ca19000f8274028bc5abb2896452275",
       "type": "TERROR_CHESTPLATE"
     },
     {
@@ -599,356 +480,110 @@
     },
     {
       "attributes": {
-        "dominance": 3
+        "dominance": 3,
+        "lifeline": 3
       },
-      "startingBid": 5000000,
-      "uuid": "98e6e807e8eb421788dcc7e023ed004b",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "mending": 5,
-        "dominance": 4
-      },
-      "startingBid": 2300000,
-      "uuid": "025df61519214f7c96fea01a6a2dc22e",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "lifeline": 5
-      },
-      "startingBid": 3000000,
-      "uuid": "ddd957deafae4dfcac3e920e203be9f5",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "dominance": 4
-      },
-      "startingBid": 6500000,
-      "uuid": "23282d6e431a462f9aff2492d7277c90",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "magic_find": 5
-      },
-      "startingBid": 7000000,
-      "uuid": "23df26438dea4e6595cda371344cfa03",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "mana_pool": 5
-      },
-      "startingBid": 10200000,
-      "uuid": "5b85473b05764acea7e04d5a47579e5c",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "mana_pool": 5
-      },
-      "startingBid": 11500000,
-      "uuid": "023d39ef1ed44323acc8f3275e0dfcb8",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 7,
-        "dominance": 4
-      },
-      "startingBid": 19860000,
-      "uuid": "b2a0b1adcb594f6b8e3186bab2e3d67d",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "lifeline": 5
-      },
-      "startingBid": 4000000,
-      "uuid": "c3b7a19d09604c7496e9e95e2c5fd3c3",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "magic_find": 6
-      },
-      "startingBid": 25000000,
-      "uuid": "1df483be019445e8a6a88e83f4279038",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 5,
-        "dominance": 4
-      },
-      "startingBid": 38000000,
-      "uuid": "60bfa6639ecd401b8c3139961de82267",
-      "type": "CRIMSON_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "veteran": 5,
-        "dominance": 4
-      },
-      "startingBid": 4000000,
-      "uuid": "ecb8f6f0735244a6af471f93f26fff2d",
-      "type": "FERVOR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mana_regeneration": 5,
-        "dominance": 4
-      },
-      "startingBid": 5000000,
-      "uuid": "caebfb1fb8dd44038eb1648838a079a9",
-      "type": "FERVOR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4,
-        "mana_pool": 5
-      },
-      "startingBid": 5900000,
-      "uuid": "00d42772e973499b90bca9bf8dd12740",
-      "type": "HOLLOW_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 5,
-        "dominance": 4
-      },
-      "startingBid": 4280000,
-      "uuid": "6b333ccd7aac4521a6939f3b4f6b4dd6",
+      "startingBid": 4322222,
+      "uuid": "2e2a6158175048aaac62200dc45714dd",
       "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "mending": 5,
-        "dominance": 4
+        "dominance": 3,
+        "lifeline": 3
       },
-      "startingBid": 5400000,
-      "uuid": "74dca43df5f944e1af392b55027e8d8b",
+      "startingBid": 6990000,
+      "uuid": "283a6f54bb534222ace2064b670c91e3",
       "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 4,
-        "speed": 5
-      },
-      "startingBid": 7400000,
-      "uuid": "358d4f72814145c2bea5bac836968d76",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 5,
-        "dominance": 4
-      },
-      "startingBid": 49888888,
-      "uuid": "14852a1e08be4c5688c6f633ee5c1307",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 4
-      },
-      "startingBid": 6398999,
-      "uuid": "ee97adb0577f43778a6e884a75695d9d",
-      "type": "ATTRIBUTE_SHARD"
-    }
-  ],
-  [
-    {
-      "attributes": {
-        "dominance": 5,
-        "magic_find": 4
-      },
-      "startingBid": 5000000,
-      "uuid": "4a7fe509a7f1406498352c9aaf955d19",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
+        "dominance": 3,
+        "lifeline": 3
       },
       "startingBid": 8000000,
-      "uuid": "f16d135545174f008b4b9aeef5bb1e6c",
-      "type": "AURORA_CHESTPLATE"
+      "uuid": "0fb1cc59292d4b508e3924f94aeeaadd",
+      "type": "TERROR_CHESTPLATE"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 9000000,
-      "uuid": "918cbedda19f4e10947dc6366b5c413c",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "magic_find": 8
-      },
-      "startingBid": 58000000,
-      "uuid": "48419229e9a74c6c93c6cbd283fd77a4",
-      "type": "AURORA_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
+        "dominance": 3
       },
       "startingBid": 3000000,
-      "uuid": "3bfb744ac85d4fc597a79f3e28419a47",
-      "type": "CRIMSON_CHESTPLATE"
+      "uuid": "babcf3aaf65542869d01decaa8596737",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "fortitude": 4
+        "dominance": 3
       },
-      "startingBid": 3000000,
-      "uuid": "6d0389948a6040be92cd390b83b1bd70",
-      "type": "CRIMSON_CHESTPLATE"
+      "startingBid": 3200000,
+      "uuid": "c721b7b4c47240799994bacb0270c8eb",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "speed": 4
+        "dominance": 3
       },
-      "startingBid": 3900000,
-      "uuid": "7cda01f7c2ca4289947512422e550972",
-      "type": "CRIMSON_CHESTPLATE"
+      "startingBid": 3450000,
+      "uuid": "ddb1b0c1f22d4db6bb98347f260866c0",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "arachno_resistance": 4
+        "dominance": 3
       },
       "startingBid": 3900000,
-      "uuid": "bf4414e1f130440abe70c0398c824582",
-      "type": "CRIMSON_CHESTPLATE"
+      "uuid": "0319275943b1406b8ac6652f284eea5a",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "veteran": 4,
-        "dominance": 5
+        "dominance": 3
       },
-      "startingBid": 11900000,
-      "uuid": "ac008d3f421f490cb6abc27f39f9a0ca",
-      "type": "CRIMSON_CHESTPLATE"
+      "startingBid": 3999999,
+      "uuid": "0670b90c1c804b04aecda1240d1ee3f3",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "mana_pool": 5
+        "dominance": 3
       },
-      "startingBid": 45000000,
-      "uuid": "132056c1c8d74c388a878e9b25daf43a",
-      "type": "CRIMSON_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "2cfd18f3a16e4fd3856cb263a62f5870",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "mending": 4,
-        "dominance": 5
+        "dominance": 3
       },
-      "startingBid": 1999995,
-      "uuid": "1a09a7a259ed4a13bddf06cf26ea482f",
-      "type": "FERVOR_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "039460beb853401cbe8b2966aea7764c",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "magic_find": 4
+        "dominance": 3
       },
-      "startingBid": 2000000,
-      "uuid": "69b780c3fba24f8bae5baa85d34b62a2",
-      "type": "FERVOR_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "1e6196a9dd9f4268a59186a55537a90a",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "magic_find": 4
+        "dominance": 3
       },
-      "startingBid": 3900000,
-      "uuid": "98cce11010334c0b9dc0618cb5d5b103",
-      "type": "FERVOR_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "6ba8d74a539d4b21a4b525d02f9facf3",
+      "type": "ATTRIBUTE_SHARD"
     },
     {
       "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
+        "dominance": 3
       },
-      "startingBid": 5990000,
-      "uuid": "5b35d95bdc62486aaffc5af2b1c0f3f4",
-      "type": "HOLLOW_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 4,
-        "dominance": 5
-      },
-      "startingBid": 3550000,
-      "uuid": "282d570269f544719ef84cd0beace106",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 4
-      },
-      "startingBid": 3780000,
-      "uuid": "c33d372d53e1437fa7a7e0b6d55f2c00",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "blazing_resistance": 4,
-        "dominance": 5
-      },
-      "startingBid": 3800000,
-      "uuid": "b8bf007b46ca466bb2a5d21caa1de0b9",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "mana_pool": 2
-      },
-      "startingBid": 22222222,
-      "uuid": "4061a0d904a44c7f975d7bdaa0696547",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "dominance": 5,
-        "speed": 5
-      },
-      "startingBid": 28000000,
-      "uuid": "7d5883236c2b4816b9dcf69f43d5ab5e",
-      "type": "TERROR_CHESTPLATE"
-    },
-    {
-      "attributes": {
-        "mending": 10,
-        "dominance": 5
-      },
-      "startingBid": 130000000,
-      "uuid": "e93740311ca245849e83046481aeca62",
-      "type": "TERROR_CHESTPLATE"
+      "startingBid": 4000000,
+      "uuid": "9a2d6d08de5d4017a8429665c170f6bd",
+      "type": "ATTRIBUTE_SHARD"
     }
   ]
 ]
