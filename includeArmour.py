@@ -5,7 +5,6 @@ starting_armour = {
   "type": "crimson",
   "piece": "chestplate",
   "attr1": ["dominance", 2, 5],
-  "attr2": ["mending", 2, 5]
 }
 
 def format_number(num):
@@ -117,9 +116,9 @@ def cost(l, prices, attribute, stack=[]):
 results =  cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0])
 
 total = 0
-for result in results:
+for i, result in enumerate(results):
   total += int(result['startingBid'])
-  print(f"{result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
+  print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{result['startingBid']}: {result['uuid']}")
 
 print(format_number(total))
 

@@ -3,7 +3,6 @@ import requests
 startLevel = 3
 endLevel = 5
 attribute = "dominance"
-current_number = 0
 prices = [[]]
 
 for i in range(10):
@@ -22,8 +21,6 @@ prices[startLevel].append({
         }
     }
 })
-
-print(prices)
 
 prices[startLevel] = sorted(prices[startLevel], key=lambda x: x["startingBid"])
 
@@ -69,10 +66,8 @@ def filterOutBaseAttr(x):
 result = cost(endLevel)
 result = list(filter(filterOutBaseAttr, result))
 finalCost = sum(item["startingBid"] for item in (result))
-for auction in result:
-    global current_number
-    current_number += 1
+for i, auction in enumerate(result):
     tier = auction["nbtData"]["data"]["attributes"][attribute]
     price = auction["startingBid"]
-    print(current_number, f"{attribute.upper()} {str(tier)} {str(price/1000000)}M: /viewauction {auction['uuid']}")
+    print(f"{i+1}. {attribute.upper()} {str(tier)} {str(price/1000000)}M: /viewauction {auction['uuid']}")
 print(f"TOTAL COST: {str(finalCost/1000000)}M")
