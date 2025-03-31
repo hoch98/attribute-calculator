@@ -7,6 +7,9 @@ starting_armour = {
   "attr1": ["dominance", 2, 3],
 }
 
+def filterOutBaseAttr(x):
+    return x["uuid"] != "starting"
+
 def format_number(num):
   if num >= 1_000_000_000:
     return f"{num / 1_000_000_000:.2f}b"
@@ -17,66 +20,55 @@ def format_number(num):
   else:
     return str(num)
 
-types = ["aurora", "crimson", "fervor", "hollow", "terror"]
+def getPrices(starting_armour, attributeData):
 
-attribute1_prices = [[]]
+  attribute1_prices = [[]]
+  types = ["aurora", "crimson", "fervor", "hollow", "terror"]
 
-for i in range(starting_armour["attr1"][2]):
-    
-  level_prices1 = []
+  for i in range(attributeData[2]):
+      
+    level_prices1 = []
 
-  for type in types:
-    armour_tag = (type+"_"+starting_armour["piece"]).upper()
-    print(armour_tag, starting_armour['attr1'][0], i+1)
+    for armourType in types:
+      armour_tag = (armourType+"_"+starting_armour["piece"]).upper()
 
-    url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
-    response = requests.request("GET", url)
-    try:
-      response.json()
-    except:
-      print("ran out of requests, continuing after a minute")
-      time.sleep(60)
-      url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
+      url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{attributeData[0]}={str(i+1)}"
       response = requests.request("GET", url)
+      try:
+        response.json()
+      except:
+        print("ran out of requests, continuing after 30 seconds")
+        time.sleep(30)
+        url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{attributeData[0]}={str(i+1)}"
+        response = requests.request("GET", url)
 
-    response = [{
-      "attributes" : product["nbtData"]["data"]["attributes"],
-      "startingBid": product["startingBid"],
-      "uuid": product["uuid"],
-      "type": armour_tag
-    } for product in response.json()]
+      response = [{
+        "attributes" : product["nbtData"]["data"]["attributes"],
+        "startingBid": product["startingBid"],
+        "uuid": product["uuid"],
+        "type": armour_tag
+      } for product in response.json()]
 
-    level_prices1 += response
+      level_prices1 += response
 
-  #attribute shards
+    #attribute shards
 
-  url = f"https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?{starting_armour['attr1'][0]}={str(i+1)}"
-  response = requests.request("GET", url)
-  level_prices1 += [
-    {
-      "attributes": {
-        starting_armour["attr1"][0]: i+1
-      },
-      "startingBid": product["startingBid"],
-      "uuid": product["uuid"],
-      "type": "ATTRIBUTE_SHARD"
-    } for product in response.json()
-  ]
+    url = f"https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?{attributeData[0]}={str(i+1)}"
+    response = requests.request("GET", url)
+    level_prices1 += [
+      {
+        "attributes": {
+          attributeData[0]: i+1
+        },
+        "startingBid": product["startingBid"],
+        "uuid": product["uuid"],
+        "type": "ATTRIBUTE_SHARD"
+      } for product in response.json()
+    ]
 
-  attribute1_prices.append(level_prices1)
+    attribute1_prices.append(level_prices1)
 
-attribute1_prices[starting_armour["attr1"][1]].append(
-  {
-    "attributes": {
-      starting_armour["attr1"][0]: starting_armour["attr1"][1]
-    },
-    "startingBid": 0,
-    "uuid": "starting armour",
-    "type": (type+"_"+starting_armour["piece"]).upper()
-  }
-)
-
-attribute1_prices[starting_armour["attr1"][1]] = sorted(attribute1_prices[starting_armour["attr1"][1]], key=lambda x: x["startingBid"])
+  return attribute1_prices
 
 def cost(l, prices, attribute, stack=[]):
     rl = stack.copy()
@@ -113,14 +105,29 @@ def cost(l, prices, attribute, stack=[]):
     else:
         return compareStack
 
-results =  cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0])
+def run():
 
-total = 0
-for i, result in enumerate(results):
-  total += int(result['startingBid'])
-  print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}: /viewauction {result['uuid']}")
+  attribute1_prices = getPrices(starting_armour, starting_armour["attr1"])
 
-print(format_number(total))
+  attribute1_prices[starting_armour["attr1"][1]].append(
+    {
+      "attributes": {
+        starting_armour["attr1"][0]: starting_armour["attr1"][1]
+      },
+      "startingBid": 0,
+      "uuid": "starting",
+      "type": (starting_armour["type"]+"_"+starting_armour["piece"]).upper()
+    }
+  )
 
-with open("data.json", "w") as file:
-   json.dump(attribute1_prices, file, indent=2)
+  attribute1_prices[starting_armour["attr1"][1]] = sorted(attribute1_prices[starting_armour["attr1"][1]], key=lambda x: x["startingBid"])
+
+  results = cost(starting_armour["attr1"][2], attribute1_prices, starting_armour["attr1"][0])
+  results = list(filter(filterOutBaseAttr, results))
+
+  total = 0
+  for i, result in enumerate(results):
+    total += int(result['startingBid'])
+    print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}: /viewauction {result['uuid']}")
+
+  print(format_number(total))
