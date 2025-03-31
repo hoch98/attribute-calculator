@@ -14,24 +14,6 @@ h1 {
     align-items: center;
 }
 
-.dark {
-    color: white;
-    background-color: #222222;
-}
-
-.themeChanger {
-    position: absolute;
-    left: 30px;
-    top: 10px;
-    border: solid black;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.dark .themeChanger {
-    border: solid white;
-}
-
 body div {
     text-align: center;
     display: inline-block;
@@ -45,11 +27,6 @@ body div {
     gap: 30px;
 }
 
-.dark button {
-    background-color: rgb(55, 90, 127);
-    color: white;
-}
-
 #calculateContainer button {
     font-size: large;
     border-width: 1px;
@@ -60,14 +37,9 @@ body div {
 }
 
 #resultsContainer {
-    width: 50%;
+    width: 100%;
     margin-top: 2%;
     text-align: center;
-}
-
-#saves {
-    width: 50%;
-    margin-top: 1%;
 }
 
 .costSum {
@@ -75,10 +47,17 @@ body div {
     display: inline-block;
 }
 
-h3 button{
-    margin: 0;
-    margin-left: 1%;
-    font-size: x-large;
+.resultTextCheckbox {
+    margin-left: 20px;
     display: inline;
-    border: none;
+    zoom: 1.5;
+}
+
+p button{
+    margin: 0;
+    margin-left: 10px;
+    display: inline;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: white;
 }

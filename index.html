@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="sl-theme-dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
     <title>Attribute Upgrading Calculator
     </title>
 </head>
 <body class="dark">
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="themeChanger dark"
-        >
-        <path d="M3 17h1m16 0h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7m-9.7 5.7a4 4 0 0 1 8 0" />
-        <path d="M3 21l18 0" />
-        <path d="M12 3v6l3 -3m-6 0l3 3" />
-    </svg>
     <h1>
         Attribute Upgrading Calculator
     </h1>
@@ -32,79 +18,75 @@
     <br>
     <div id="inputSelectors" class="dark">
         <div id="attributeSelectorContainer">
-            <p>Attribute to Upgrade</p>
-            <select name="attributeSelector" id="attributeSelector" class="dark">
-                <option value="arachno">Arachno</option>
-                <option value="arachno_resistance">Arachno Resistance</option>
-                <option value="attack_speed">Attack Speed</option>
-                <option value="blazing">Blazing</option>
-                <option value="blazing_fortune">Blazing Fortune</option>
-                <option value="blazing_resistance">Blazing Resistance</option>
-                <option value="breeze">Breeze</option>
-                <option value="combo">Combo</option>
-                <option value="deadeye">Deadeye</option>
-                <option value="dominance">Dominance</option>
-                <option value="double_hook">Double Hook</option>
-                <option value="elite">Elite</option>
-                <option value="ender">Ender</option>
-                <option value="ender_resistance">Ender Resistance</option>
-                <option value="experience">Experience</option>
-                <option value="fisherman">Fisherman</option>
-                <option value="fishing_experience">Fishing Experience</option>
-                <option value="fishing_speed">Fishing Speed</option>
-                <option value="fortitude">Fortitude</option>
-                <option value="hunter">Hunter</option>
-                <option value="ignition">Ignition</option>
-                <option value="infection">Infection</option>
-                <option value="life_recovery">Life Recovery</option>
-                <option value="life_regeneration">Life Regeneration</option>
-                <option value="lifeline">Lifeline</option>
-                <option value="magic_find">Magic Find</option>
-                <option value="mana_pool">Mana Pool</option>
-                <option value="mana_regeneration">Mana Regeneration</option>
-                <option value="mana_steal">Mana Steal</option>
-                <option value="midas_touch">Midas Touch</option>
-                <option value="speed">Speed</option>
-                <option value="trophy_hunter">Trophy Hunter</option>
-                <option value="undead">Undead</option>
-                <option value="undead_resistance">Undead Resistance</option>
-                <option value="veteran">Veteran</option>
-                <option value="mending">Vitality</option>
-                <option value="warrior">Warrior</option>
-            </select>
+            <sl-dropdown name="attributeSelector" id="attributeSelector">
+                <sl-button id="dropdownOption" slot="trigger" caret>Attribute to Upgrade</sl-button>
+                <sl-menu>
+                    <sl-menu-item value="arachno">Arachno</sl-menu-item>
+                    <sl-menu-item value="arachno_resistance">Arachno Resistance</sl-menu-item>
+                    <sl-menu-item value="attack_speed">Attack Speed</sl-menu-item>
+                    <sl-menu-item value="blazing">Blazing</sl-menu-item>
+                    <sl-menu-item value="blazing_fortune">Blazing Fortune</sl-menu-item>
+                    <sl-menu-item value="blazing_resistance">Blazing Resistance</sl-menu-item>
+                    <sl-menu-item value="breeze">Breeze</sl-menu-item>
+                    <sl-menu-item value="combo">Combo</sl-menu-item>
+                    <sl-menu-item value="deadeye">Deadeye</sl-menu-item>
+                    <sl-menu-item value="dominance">Dominance</sl-menu-item>
+                    <sl-menu-item value="double_hook">Double Hook</sl-menu-item>
+                    <sl-menu-item value="elite">Elite</sl-menu-item>
+                    <sl-menu-item value="ender">Ender</sl-menu-item>
+                    <sl-menu-item value="ender_resistance">Ender Resistance</sl-menu-item>
+                    <sl-menu-item value="experience">Experience</sl-menu-item>
+                    <sl-menu-item value="fisherman">Fisherman</sl-menu-item>
+                    <sl-menu-item value="fishing_experience">Fishing Experience</sl-menu-item>
+                    <sl-menu-item value="fishing_speed">Fishing Speed</sl-menu-item>
+                    <sl-menu-item value="fortitude">Fortitude</sl-menu-item>
+                    <sl-menu-item value="hunter">Hunter</sl-menu-item>
+                    <sl-menu-item value="ignition">Ignition</sl-menu-item>
+                    <sl-menu-item value="infection">Infection</sl-menu-item>
+                    <sl-menu-item value="life_recovery">Life Recovery</sl-menu-item>
+                    <sl-menu-item value="life_regeneration">Life Regeneration</sl-menu-item>
+                    <sl-menu-item value="lifeline">Lifeline</sl-menu-item>
+                    <sl-menu-item value="magic_find">Magic Find</sl-menu-item>
+                    <sl-menu-item value="mana_pool">Mana Pool</sl-menu-item>
+                    <sl-menu-item value="mana_regeneration">Mana Regeneration</sl-menu-item>
+                    <sl-menu-item value="mana_steal">Mana Steal</sl-menu-item>
+                    <sl-menu-item value="midas_touch">Midas Touch</sl-menu-item>
+                    <sl-menu-item value="speed">Speed</sl-menu-item>
+                    <sl-menu-item value="trophy_hunter">Trophy Hunter</sl-menu-item>
+                    <sl-menu-item value="undead">Undead</sl-menu-item>
+                    <sl-menu-item value="undead_resistance">Undead Resistance</sl-menu-item>
+                    <sl-menu-item value="veteran">Veteran</sl-menu-item>
+                    <sl-menu-item value="mending">Vitality</sl-menu-item>
+                    <sl-menu-item value="warrior">Warrior</sl-menu-item>
+                </sl-menu>
+            </sl-dropdown>
         </div>
         <div id="startingLevelInputContainer">
-            <p id="startingLevelDisplay">Starting Level: 1</p>
-            <input type="range" name="startingLevel" id="startingLevel" min="1" max="9" step="1" value="1" oninput="document.querySelector('#startingLevelDisplay').textContent = 'Starting Level: '+this.value">
+            <sl-range label="Starting Level: 1" tooltip="bottom" min="1" max="10" step="1" name="startingLevel" id="startingLevel" ></sl-range>
         </div>
         <div id="endingLevelInputContainer">
-            <p id="endingLevelDisplay">Ending Level: 1</p>
-            <input type="range" name="endingLevel" id="endingLevel" min="1" max="10" step="1" value="1">
+            <sl-range label="Ending Level: 1" tooltip="bottom" min="1" max="10" step="1" name="endingLevel" id="endingLevel" ></sl-range>
         </div>
         <br>
         <div id="armourInputContainer">
             <p>Use armour: <input type="checkbox" name="Use armour: " id="useArmour"></p>
-            <select name="armourType" id="armourType" class="dark" style="visibility: hidden;">
-                <option value="helmet">Helmet</option>
-                <option value="chestplate">Chestplate</option>
-                <option value="leggings">Leggings</option>
-                <option value="boots">Boots</option>
-            </select>
+            <sl-dropdown name="armourType" id="armourType" style="visibility: hidden;">
+                <sl-button id="armourTypeDropdownOption" slot="trigger" caret>Helmet</sl-button>
+                <sl-menu>
+                    <sl-menu-item value="helmet">Helmet</sl-menu-item>
+                    <sl-menu-item value="chestplate">Chestplate</sl-menu-item>
+                    <sl-menu-item value="leggings">Leggings</sl-menu-item>
+                    <sl-menu-item value="boots">Boots</sl-menu-item>
+                </sl-menu>
+            </sl-dropdown>
         </div>
     </div>
     <div id="calculateContainer">
-        <button id="calculateButton" class="dark">Calculate</button>
-        <button id="saveButton" class="dark">Save</button>
+        <sl-button id="calculateButton" variant="primary">Calculate</sl-button>
     </div>
     <div id="contents">
         <div id="resultsContainer">
 
-        </div>
-        <div id="saves">
-            <h2>Saves</h2>
-            <hr>
-            <div id="savedThings">
-            </div>
         </div>
     </div>
     <script type="module" src="js/main.js"></script>

@@ -1,51 +1,12 @@
-var startLevel = parseInt(document.querySelector("#startingLevel").value)
-var endLevel = parseInt(document.querySelector("#endingLevel").value)
-var attribute = document.querySelector("#attributeSelector").value
+var startLevel = 1
+var endLevel = 1
+var attribute = undefined
 var running = false
 var prices = [[]]
-let piece = "boots"
+let piece = "helmet"
 let types = ["aurora", "crimson", "fervor", "hollow", "terror"]
 let useArmour = false
 let result
-let tempResultsInfo = [];
-let saves = { ...localStorage };
-let highlightedSave = undefined;
-
-function showSaves() {
-
-    document.querySelector("#savedThings").innerHTML = ""
-
-    Object.keys(saves).forEach((save) => {
-        let info = save.split("-")
-        let saveText = document.createElement("p")
-        saveText.classList.add("save")
-        saveText.textContent = info[1]+" "+info[0]+" "+info[2]+" -> "+info[3]
-        saveText.setAttribute("saveName", save)
-        document.querySelector("#savedThings").appendChild(saveText)
-        saveText.onclick = (e) => {
-            let result = JSON.parse(saves[e.target.getAttribute("savename")])
-            document.querySelector("#resultsContainer").innerHTML = ""
-            renderResults(result, info[0])
-            if (highlightedSave != undefined) {
-                highlightedSave.style.background = "transparent"
-                if (highlightedSave == e.target) {
-                    if (confirm("Delete this save?")) {
-                        localStorage.removeItem(e.target.getAttribute("savename"))
-                        saves = { ...localStorage };
-                        document.querySelector("#resultsContainer").innerHTML = ""
-                        document.querySelector("#savedThings").removeChild(e.target)
-                    }
-                }
-            }
-            highlightedSave = e.target
-            highlightedSave.style.background = "rgba(128, 128, 128, 0.5)"
-
-        }
-    })
-
-}
-
-showSaves()
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
@@ -70,9 +31,7 @@ async function calculatePrices() {
         if (useArmour) {
             for (let j = 0; j < 5; j++) {
                 let armour_tag = (types[j]+"_"+piece).toUpperCase()
-                console.log(armour_tag)
                 let response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
-                console.log("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1))
                 let data;
                 try {
                     data = await response.json()
@@ -81,7 +40,6 @@ async function calculatePrices() {
                     await sleep(30000);
                     response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
                     data = await response.json()
-                    console.log(data)
                 }
     
                 level_prices = level_prices.concat(data.map(product => ({
@@ -159,7 +117,6 @@ function cost(l, prices, attribute,  stack=[]) {
 }
 
 function copyAuctionId(string) {
-    console.log(string)
     navigator.clipboard.writeText(string);
 }
 
@@ -170,39 +127,55 @@ function renderResults(result, attribute) {
     sumElement.classList.add("costSum")
     document.querySelector("#resultsContainer").appendChild(sumElement)
     result.forEach((book) => {
-        let bookElement = document.createElement("h3")
+        let bookElement = document.createElement("p")
         let tier = book["attributes"][attribute]
         bookElement.setAttribute("copyString", "/viewauction "+book.uuid)
         if (book.startingBid == 0) return;
         if (attribute == "mending") {
-            bookElement.textContent = book["type"]+" /W VITALITY "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
+            bookElement.innerHTML = book["type"]+" /W VITALITY "+tier+" @"+(formatNumber(book.startingBid))+": "+"<br><span> /viewauction "+book.uuid+"</span>"
         }else {
-            bookElement.textContent = book["type"]+" /W "+attribute.toUpperCase()+" "+tier+" @"+(formatNumber(book.startingBid))+": "+"/viewauction "+book.uuid
+            bookElement.innerHTML = book["type"]+" /W "+attribute.toUpperCase()+" "+tier+" @"+(formatNumber(book.startingBid))+": "+"<br><span>/viewauction "+book.uuid+"</span>"
         }
         let copybutton = document.createElement("button");
-        let copyicon = document.createElement('i');
-        copyicon.classList.add("ti")
-        copyicon.classList.add("ti-copy")
+        let copyicon = document.createElement('sl-icon');
+
+        copyicon.setAttribute("name", "copy")
 
         copybutton.addEventListener('click', (input) => {
             let node = input.target.parentElement
-            if (node.tagName != "H3") node = node.parentElement;
+            if (node.tagName != "P") node = node.parentElement;
             copyAuctionId(node.getAttribute("copyString"))
         })
         copybutton.appendChild(copyicon)
         bookElement.appendChild(copybutton)
+
+        let crossOutCheckbox = document.createElement("input")
+        crossOutCheckbox.type = "checkbox"
+        crossOutCheckbox.classList.add("resultTextCheckbox")
+        bookElement.appendChild(crossOutCheckbox)
+
+        crossOutCheckbox.onclick = (event) => {
+            let span = event.target.parentElement.querySelector("span")
+            if (event.target.checked) {
+                span.style.textDecoration = "line-through";
+            } else {
+                span.style.textDecoration = "none";
+            }
+        }
+
         document.querySelector("#resultsContainer").appendChild(bookElement)
         document.querySelector("#resultsContainer").appendChild(document.createElement("br"))
     })
 }
 
-document.querySelector("#attributeSelector").addEventListener("change", (input) => {
-    attribute = input.target.value
+document.querySelector("#attributeSelector").addEventListener("sl-select", (event) => {
+    attribute = event.detail.item.value
+    document.querySelector("#dropdownOption").textContent = event.detail.item.textContent
 })
 
-document.querySelector("#armourType").addEventListener("change", (input) => {
-    piece = input.target.value
-    console.log(piece)
+document.querySelector("#armourType").addEventListener("sl-select", (event) => {
+    piece = event.detail.item.value
+    document.querySelector("#armourTypeDropdownOption").textContent = event.detail.item.textContent
 })
 
 document.querySelector("#useArmour").addEventListener("change", (input) => {
@@ -216,19 +189,18 @@ document.querySelector("#useArmour").addEventListener("change", (input) => {
 
 document.querySelector("#startingLevel").addEventListener("input", (input) => {
     startLevel = parseInt(input.target.value)
-    document.querySelector('#startingLevelDisplay').textContent =  'Starting Level: '+input.target.value
+    input.target.label = "Starting Level: "+startLevel
 })
 
 document.querySelector("#endingLevel").addEventListener("input", (input) => {
     endLevel = parseInt(input.target.value)
-    document.querySelector('#endingLevelDisplay').textContent =  'Ending Level: '+input.target.value
+    input.target.label = "Ending Level: "+endLevel
 })
 
 document.querySelector("#calculateButton").onclick = async () => {
-    if (endLevel <= startLevel) {alert("Invalid ending level!"); return false;}
+    if (endLevel <= startLevel || attribute == undefined) {alert("Invalid attribute or ending level!"); return false;}
     if (running == true) return false;
     running = true
-    tempResultsInfo = []
     prices=  [[]];
     document.querySelector("#resultsContainer").innerHTML = ""
     await calculatePrices();
@@ -237,7 +209,6 @@ document.querySelector("#calculateButton").onclick = async () => {
     if (useArmour) {
         item = piece
     }
-    tempResultsInfo = [attribute, item, startLevel, endLevel]
     result.sort((a, b) => a.startingBid - b.startingBid);
     document.querySelector("#resultsContainer").innerHTML = ""
     if (result.length == 0) {
@@ -246,42 +217,4 @@ document.querySelector("#calculateButton").onclick = async () => {
         renderResults(result, attribute)
     }
     running = false
-}
-
-let theme = "dark"
-
-document.querySelector(".themeChanger").onclick = () => {
-    if (theme == "dark") {
-        console.log("hi")
-        document.body.classList.remove("dark")
-        document.querySelector("#inputSelectors").classList.remove("dark")
-        document.querySelector("#attributeSelector").classList.remove("dark")
-        document.querySelector("#calculateButton").classList.remove("dark")
-        document.querySelector(".themeChanger").classList.remove("dark")
-        document.querySelector("#armourType").classList.remove("dark")
-        document.querySelector("#saveButton").classList.remove("dark")
-        theme = "light"
-    }
-    else  {
-        document.body.classList.add("dark")
-        document.querySelector("#inputSelectors").classList.add("dark")
-        document.querySelector("#attributeSelector").classList.add("dark")
-        document.querySelector("#calculateButton").classList.add("dark")
-        document.querySelector("#saveButton").classList.add("dark")
-        document.querySelector(".themeChanger").classList.add("dark")
-        document.querySelector("#armourType").classList.add("dark")
-        theme = "dark"
-    }
-}
-
-document.getElementById("saveButton").onclick = () => {
-    if (tempResultsInfo.length == 0) {
-        console.log("hi")
-        alert("No data to be saved"); 
-        return true;
-    }
-    localStorage.setItem(tempResultsInfo[0]+"-"+tempResultsInfo[1]+"-"+tempResultsInfo[2]+"-"+tempResultsInfo[3], JSON.stringify(result))
-    saves = { ...localStorage }
-    showSaves()
-    
 }
