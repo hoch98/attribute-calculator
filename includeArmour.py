@@ -31,6 +31,7 @@ def getPrices(starting_armour, attributeData):
 
     for armourType in types:
       armour_tag = (armourType+"_"+starting_armour["piece"]).upper()
+      print(armour_tag, str(i+1))
 
       url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{attributeData[0]}={str(i+1)}"
       response = requests.request("GET", url)
