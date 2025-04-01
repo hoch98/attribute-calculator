@@ -22,52 +22,17 @@ def format_number(num):
 
 def getPrices(starting_armour, attributeData):
 
-  attribute1_prices = [[]]
-  types = ["aurora", "crimson", "fervor", "hollow", "terror"]
+  attribute1_prices = []
+  for i in range(attributeData[2]+1):
+     attribute1_prices.append([])
 
-  for i in range(attributeData[2]):
-      
-    level_prices1 = []
+  attributeName = attributeData[0]
+  url = f'https://auction-api-production-4ce9.up.railway.app/?attribute=["{attributeName}",{attributeData[1]},{attributeData[2]}]&piece={starting_armour["piece"].upper()}'
+  response = requests.request("GET", url).json()
 
-    for armourType in types:
-      armour_tag = (armourType+"_"+starting_armour["piece"]).upper()
-      print(armour_tag, str(i+1))
-
-      url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{attributeData[0]}={str(i+1)}"
-      response = requests.request("GET", url)
-      try:
-        response.json()
-      except:
-        print("ran out of requests, continuing after 30 seconds")
-        time.sleep(30)
-        url = f"https://sky.coflnet.com/api/auctions/tag/{armour_tag}/active/bin?{attributeData[0]}={str(i+1)}"
-        response = requests.request("GET", url)
-
-      response = [{
-        "attributes" : product["nbtData"]["data"]["attributes"],
-        "startingBid": product["startingBid"],
-        "uuid": product["uuid"],
-        "type": armour_tag
-      } for product in response.json()]
-
-      level_prices1 += response
-
-    #attribute shards
-
-    url = f"https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?{attributeData[0]}={str(i+1)}"
-    response = requests.request("GET", url)
-    level_prices1 += [
-      {
-        "attributes": {
-          attributeData[0]: i+1
-        },
-        "startingBid": product["startingBid"],
-        "uuid": product["uuid"],
-        "type": "ATTRIBUTE_SHARD"
-      } for product in response.json()
-    ]
-
-    attribute1_prices.append(level_prices1)
+  for auction in response["auctions"]:
+    level = auction["attributes"][attributeName]
+    attribute1_prices[level].append(auction)
 
   return attribute1_prices
 
@@ -109,6 +74,8 @@ def cost(l, prices, attribute, stack=[]):
 def run():
 
   attribute1_prices = getPrices(starting_armour, starting_armour["attr1"])
+  with open("data.json", "w") as file:
+     json.dump(attribute1_prices, file)
 
   attribute1_prices[starting_armour["attr1"][1]].append(
     {
@@ -132,4 +99,5 @@ def run():
     print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}: /viewauction {result['uuid']}")
 
   print(format_number(total))
+
 run()
