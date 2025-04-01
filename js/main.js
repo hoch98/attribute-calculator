@@ -158,8 +158,10 @@ function renderResults(result, attribute) {
             let span = event.target.parentElement.querySelector("span")
             if (event.target.checked) {
                 span.style.textDecoration = "line-through";
+                span.parentElement.style.color = "#FF6F61";
             } else {
                 span.style.textDecoration = "none";
+                span.parentElement.style.color = "white";
             }
         }
 

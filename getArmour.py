@@ -2,10 +2,10 @@ from includeArmour import getPrices, cost, format_number, filterOutBaseAttr
 import requests
 
 starting_armour = {
-  "type": "crimson",
-  "piece": "boots",
-  "attr1": ["dominance", 0, 5],
-  "attr2": ["veteran", 0, 5],
+  "type": "aurora",
+  "piece": "chestplate",
+  "attr1": ["mana_pool", 0, 10],
+  "attr2": ["mana_regeneration", 0, 10],
 }
 
 cheapest = {
