@@ -29,7 +29,7 @@ async function calculatePrices() {
     }
     let url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`
     if (!useArmour) url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]`
-    let data = await (await fetch(`https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`)).json();
+    let data = await (await fetch(url)).json();
     data["auctions"].forEach((auction) => {
         let level = auction["attributes"][attribute]
         prices[level].push(auction)
@@ -150,7 +150,8 @@ document.querySelector("#armourType").addEventListener("sl-select", (event) => {
 })
 
 document.querySelector("#useArmour").addEventListener("change", (input) => {
-    useArmour = !useArmour
+    useArmour = input.target.checked
+    console.log(useArmour)
     if (useArmour) {
         document.querySelector("#armourType").style.visibility = "visible";
     } else {
