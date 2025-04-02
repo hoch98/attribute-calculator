@@ -149,7 +149,7 @@ async def upgrades(ctx: interactions.CommandContext, attribute:str, starting_lev
     for i, result in enumerate(results):
         total += int(result['startingBid'])
         description += f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}\n > /viewauction {result['uuid']} \n"
-    description += "\n"+f"**Total: {format_number(total)}**"
+    description += "\n"+f"**Total: {format_number(total)} (not including fusion cost)**"
     if len(results) == 0:
        description = "Couldn't find a way to reach that level :/"
 
