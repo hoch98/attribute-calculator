@@ -1,4 +1,4 @@
-import requests, json, time
+import requests, json
 
 starting_armour = {
   "tier": "burning",
