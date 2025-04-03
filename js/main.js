@@ -131,14 +131,14 @@ function renderResults(result, attribute) {
             console.log(sum, price)
             if (event.target.checked) {
                 sum = sum - price
-                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(sum)+ " (remaining)"
+                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(total)+" ("+formatNumber(sum)+" left)"
                 span.style.textDecoration = "line-through";
                 span.parentElement.style.color = "#FF6F61";
             } else {
                 sum = sum + price
-                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(sum)
+                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(total)
                 if (sum != total) {
-                    document.querySelector("h2").textContent += " (remaining)"
+                    document.querySelector("h2").textContent += " ("+formatNumber(sum)+" left)"
                 }
                 span.style.textDecoration = "none";
                 span.parentElement.style.color = "white";
