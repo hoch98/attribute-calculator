@@ -91,6 +91,7 @@ function copyAuctionId(string) {
 
 function renderResults(result, attribute) {
     let sum = result.reduce((acc, item) => acc + item.startingBid, 0)
+    let total = sum;
     let sumElement = document.createElement("h2")
     sumElement.textContent = "Total Cost: "+formatNumber(sum)
     sumElement.classList.add("costSum")
@@ -122,13 +123,23 @@ function renderResults(result, attribute) {
         crossOutCheckbox.type = "checkbox"
         crossOutCheckbox.classList.add("resultTextCheckbox")
         bookElement.appendChild(crossOutCheckbox)
+        bookElement.setAttribute('price', book.startingBid)
 
         crossOutCheckbox.onclick = (event) => {
             let span = event.target.parentElement.querySelector("span")
+            let price = parseInt(span.parentElement.getAttribute('price'))
+            console.log(sum, price)
             if (event.target.checked) {
+                sum = sum - price
+                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(sum)+ " (remaining)"
                 span.style.textDecoration = "line-through";
                 span.parentElement.style.color = "#FF6F61";
             } else {
+                sum = sum + price
+                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(sum)
+                if (sum != total) {
+                    document.querySelector("h2").textContent += " (remaining)"
+                }
                 span.style.textDecoration = "none";
                 span.parentElement.style.color = "white";
             }
