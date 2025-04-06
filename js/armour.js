@@ -162,7 +162,7 @@ document.querySelector("#calculateButton").onclick = async () => {
     let data = await (await fetch(url)).json();
 
     if (data["auctions"].length == 0) {
-        console.log("no base armours found")
+        document.querySelector("#resultsContainer").innerHTML = "Couldn't not find a starting armour :/"
         return false;
     }
 
@@ -230,7 +230,7 @@ document.querySelector("#calculateButton").onclick = async () => {
             renderResults(cheapest.attr2_upgrades, attribute2.name)
         } else {
 
-            document.querySelector("#resultsContainer").innerHTML = "Couldn't find a way to reach desired level.:/"
+            document.querySelector("#resultsContainer").innerHTML = "Couldn't find a way to reach desired level :/"
         }
     })
 
