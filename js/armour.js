@@ -103,6 +103,7 @@ function cost(l, prices, attribute,  stack=[]) {
     } if (noCurrent && ranOut) {
         return []
     } if (prices[l][0]["startingBid"] <= sum) {
+        console.log(prices[l][0])
         rl.push(prices[l].shift())
         compareStack.forEach((i) => {
             let tier = i["attributes"][attribute]
@@ -174,14 +175,14 @@ document.querySelector("#calculateButton").onclick = async () => {
     
             attr1_copy[auction["attributes"][attribute1.name]].push({
                 "attributes": auction["attributes"],
-                "startingBid": auction["startingBid"], 
+                "startingBid": 0, 
                 "uuid": "starting",
                 "type": "starting_piece"
             });
     
             attr2_copy[auction["attributes"][attribute2.name]].push({
                 "attributes": auction["attributes"],
-                "startingBid": auction["startingBid"], 
+                "startingBid": 0, 
                 "uuid": "starting",
                 "type": "starting_piece"
             });
@@ -200,6 +201,8 @@ document.querySelector("#calculateButton").onclick = async () => {
                 cheapest.attr1_upgrades = result1
                 cheapest.attr2_upgrades = result2
                 cheapest.starting_armour = auction
+                console.log(result1)
+                console.log(result2)
             }
         }
     })().then((out) => {
