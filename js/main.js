@@ -29,7 +29,7 @@ async function calculatePrices() {
     }
     let url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`
     if (!useArmour) url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]`
-    let data = await (await fetch(url)).json();
+    let data = await (await fetch(`https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`)).json();
     data["auctions"].forEach((auction) => {
         let level = auction["attributes"][attribute]
         prices[level].push(auction)
@@ -91,7 +91,6 @@ function copyAuctionId(string) {
 
 function renderResults(result, attribute) {
     let sum = result.reduce((acc, item) => acc + item.startingBid, 0)
-    let total = sum;
     let sumElement = document.createElement("h2")
     sumElement.textContent = "Total Cost: "+formatNumber(sum)
     sumElement.classList.add("costSum")
@@ -123,23 +122,13 @@ function renderResults(result, attribute) {
         crossOutCheckbox.type = "checkbox"
         crossOutCheckbox.classList.add("resultTextCheckbox")
         bookElement.appendChild(crossOutCheckbox)
-        bookElement.setAttribute('price', book.startingBid)
 
         crossOutCheckbox.onclick = (event) => {
             let span = event.target.parentElement.querySelector("span")
-            let price = parseInt(span.parentElement.getAttribute('price'))
-            console.log(sum, price)
             if (event.target.checked) {
-                sum = sum - price
-                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(total)+" ("+formatNumber(sum)+" left)"
                 span.style.textDecoration = "line-through";
                 span.parentElement.style.color = "#FF6F61";
             } else {
-                sum = sum + price
-                document.querySelector("h2").textContent = "Total Cost: "+formatNumber(total)
-                if (sum != total) {
-                    document.querySelector("h2").textContent += " ("+formatNumber(sum)+" left)"
-                }
                 span.style.textDecoration = "none";
                 span.parentElement.style.color = "white";
             }
@@ -161,8 +150,7 @@ document.querySelector("#armourType").addEventListener("sl-select", (event) => {
 })
 
 document.querySelector("#useArmour").addEventListener("change", (input) => {
-    useArmour = input.target.checked
-    console.log(useArmour)
+    useArmour = !useArmour
     if (useArmour) {
         document.querySelector("#armourType").style.visibility = "visible";
     } else {

@@ -8,21 +8,7 @@ h1 {
     text-align: center;
 }
 
-p {
-    text-align: center;
-}
-
-#armourType {
-    margin-left: 5px;
-}
-
 #inputSelectors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#armourInputContainer {
     display: flex;
     justify-content: center;
     align-items: center;

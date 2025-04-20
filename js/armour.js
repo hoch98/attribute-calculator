@@ -103,8 +103,10 @@ function cost(l, prices, attribute,  stack=[]) {
     } if (noCurrent && ranOut) {
         return []
     } if (prices[l][0]["startingBid"] <= sum) {
+        console.log(attribute+": removed first book from tier "+l)
         console.log(prices[l][0])
         rl.push(prices[l].shift())
+        console.log(prices[l])
         compareStack.forEach((i) => {
             let tier = i["attributes"][attribute]
             prices[tier].push(i)
