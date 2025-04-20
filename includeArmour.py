@@ -4,7 +4,7 @@ starting_armour = {
   "tier": "burning",
   "type": "crimson",
   "piece": "chestplate",
-  "attr1": ["dominance", 1, 10],
+  "attr1": ["dominance", 2, 3],
 }
 
 def filterOutBaseAttr(x):
@@ -132,4 +132,3 @@ def run():
     print(f"{i+1}. {result['type']} with {starting_armour['attr1'][0]} {result['attributes'][starting_armour['attr1'][0]]}@{format_number(result['startingBid'])}: /viewauction {result['uuid']}")
 
   print(format_number(total))
-run()

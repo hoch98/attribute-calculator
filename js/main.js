@@ -23,18 +23,49 @@ function formatNumber(num) {
 }
 
 async function calculatePrices() {
+    let progress = 0
+    let finishedProgress = endLevel+(useArmour*5*endLevel)
     prices = [[]]
     for (var i = 0; i < endLevel; i++) {
-        prices.push([])
-    }
-    let url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`
-    if (!useArmour) url = `https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]`
-    let data = await (await fetch(`https://auction-api-production-4ce9.up.railway.app/?attribute=["${attribute}",1,${endLevel}]&piece=${piece.toUpperCase()}`)).json();
-    data["auctions"].forEach((auction) => {
-        let level = auction["attributes"][attribute]
-        prices[level].push(auction)
-    })
+        let level_prices = []
+        if (useArmour) {
+            for (let j = 0; j < 5; j++) {
+                let armour_tag = (types[j]+"_"+piece).toUpperCase()
+                let response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
+                let data;
+                try {
+                    data = await response.json()
+                } catch (e) {
+                    document.querySelector("#resultsContainer").innerHTML = progress+"/"+finishedProgress+": coflnet api request limit reached, continuing after 30 seconds"
+                    await sleep(30000);
+                    response = await fetch("https://sky.coflnet.com/api/auctions/tag/"+armour_tag+"/active/bin?"+attribute+"="+(i+1));
+                    data = await response.json()
+                }
+    
+                level_prices = level_prices.concat(data.map(product => ({
+                    "attributes": { [attribute]: i+1 },
+                    "startingBid": product.startingBid,
+                    "uuid": product.uuid,
+                    "type": armour_tag
+                })));
 
+                progress++
+                document.querySelector("#resultsContainer").innerHTML = "Requests made: "+progress+"/"+finishedProgress
+
+            }
+        }
+
+        let data = await (await fetch("https://sky.coflnet.com/api/auctions/tag/ATTRIBUTE_SHARD/active/bin?"+attribute+"="+(i+1))).json();
+        level_prices = level_prices.concat(data.map(product => ({
+            "attributes": { [attribute]: i+1 },
+            "startingBid": product.startingBid,
+            "uuid": product.uuid,
+            "type": "ATTRIBUTE_SHARD"
+        })));
+        progress++
+        document.querySelector("#resultsContainer").innerHTML = "Requests made: "+progress+"/"+finishedProgress
+        prices.push(level_prices)
+    }
     prices[startLevel].push({
         "attributes": { [attribute]: startLevel },
         "startingBid": 0, 
